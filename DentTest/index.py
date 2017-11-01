@@ -19,7 +19,6 @@ def create_suite():
     return TestSuite
 
 def report():
-
     if len(sys.argv) > 1:
         report_name = os.getcwd() + '\\report\\' + sys.argv[1] + '_result.html'
     else:
