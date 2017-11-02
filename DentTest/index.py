@@ -3,8 +3,7 @@ import sys
 def create_suite():
     TestSuite = unittest.TestSuite()#测试集
     test_dir = os.getcwd()+'\\TestCase\\'
-    print(test_dir)
-
+    # print(test_dir)
 
     discover = unittest.defaultTestLoader.discover(
         start_dir=test_dir,
@@ -23,7 +22,7 @@ def report():
         report_name = os.getcwd() + '\\report\\' + sys.argv[1] + '_result.html'
     else:
         now = time.strftime("%Y-%m-%d %H_%M_%S")
-        report_name = os.getcwd()+'\\report\\'+str(now)+'_result.html'
+        report_name = os.getcwd()+'\\report\\result.html'
     return report_name
 
 fp = open(report(),'wb')

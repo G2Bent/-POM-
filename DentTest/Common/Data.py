@@ -69,7 +69,6 @@ def find_pwd(find):
         token_dict = json.loads(token_str)
         if token_dict['success'] == True:
             TOKEN = token_dict['data']['token']
-            print(TOKEN)
             code_dict = None
             if '@' in str(find):
                 #http://112.74.29.84:23301/api/User/getemailverifycode?token=1d2f9680e0704a2e927211f0695fdc44&email=944921374@qq.com&type=2
@@ -90,6 +89,7 @@ def find_pwd(find):
                     raise ApiStateException
             else:
                 raise ApiOpenException
+
 
 
 
