@@ -4,6 +4,7 @@ from Pages.RegisterPage import RegisterPage
 from BasePages.Selenium2 import browser
 from BasePages.BasePage import login_url
 from selenium import webdriver
+from API import post
 from HTMLTestRunner import HTMLTestRunner
 
 class RegisterCase(unittest.TestCase):
@@ -20,6 +21,18 @@ class RegisterCase(unittest.TestCase):
         cls.Erpassword = "a12"
         cls.Eusername = "944921374@qq.com"
         cls.ErEusername1 = "944921374.com"
+
+    def test_reg01(self):
+        try:
+            t = post.postphone(self.Pusername)
+            print(t+"删除成功")
+        except Exception as e:
+            print(e)
+        try:
+            post.postemail(self.Eusername)
+            print("删除成功")
+        except Exception as e:
+            print(e)
 
 
     def test_reg1(self):

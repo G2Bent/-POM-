@@ -128,7 +128,8 @@ class SelfInfo(BasePages):
     #个人信息：上传头像
     def edituploadfile(self,image):
         self.find_element(*self.edituploadfile_loc).click()
-        os.system(os.path.dirname(os.getcwd())+'\Autolt\%s.exe'%image)
+        # os.system(os.path.dirname(os.getcwd())+'\Autolt\%s.exe'%image)
+        os.system(os.getcwd() + '\Autolt\%s.exe' % image)
         time.sleep(3)
 
     #个人信息：用户名

@@ -14,8 +14,8 @@ class LoginPage(BasePages):
     findtext_loc = (By.XPATH,'//*[@class="find-pwd-box"]/h1')#找回密码页面文本
     regtext_loc = (By.XPATH,'//*[@class="user-explain"]/p[2]')#点击“注册”文本
     re_loc = (By.XPATH,'//*[@class="user-title"]')#"个人中心"文本校验
-    logout_loc = (By.XPATH,'//*[@id="header"]/div/div[3]/div/div/ul/li[2]/a')#退出登录
-    touxiang_loc = (By.XPATH,'//*[@id="header"]/div/div[3]/div/div')#个人信息icon
+    logout_loc = (By.XPATH,'//*[@id="user_logout"]')#退出登录
+    touxiang_loc = (By.XPATH,'//*[@id="user_head_avator"]')#个人信息icon
 
     # 操作
     # 通过继承覆盖(overriding)方法：如果子类和父类的方法名相同，优先用子类自己的方法
