@@ -13,7 +13,7 @@ class SelfCase(unittest.TestCase):
         cls.driver = browser()
         # cls.driver.implicitly_wait(5)
         cls.url = "http://test.dent-lab.com/login.html"
-        cls.user = "13217665001"
+        cls.user = "15816038158"
         cls.phone ="18814128583"
         cls.name1 = "中国恒大"
         cls.name2 = "a"
@@ -37,6 +37,7 @@ class SelfCase(unittest.TestCase):
         # 调用打开页面组件
         login_page.open()
         login_page.Login(self.user,self.psw)
+        time.sleep(3)
         return login_page
 
     def login_email(self):
@@ -45,6 +46,7 @@ class SelfCase(unittest.TestCase):
         # 调用打开页面组件
         login_page.open()
         login_page.Login(self.regemail,self.psw)
+        time.sleep(3)
         return login_page
 
     def test_self1(self):
@@ -129,6 +131,7 @@ class SelfCase(unittest.TestCase):
         user_page.newpsw(self.psw)
         user_page.renewpsw(self.psw)
         user_page.savepsw()
+        time.sleep(3)
         user_page.error_psw()
         user_page.screen(self._testMethodDoc)
 
@@ -225,6 +228,7 @@ class SelfCase(unittest.TestCase):
         user_page = self.login_email()
         user_page.BDPhone()
         user_page.phonebtn()
+        time.sleep(3)
         user_page.phonetip()
         user_page.screen(self._testMethodDoc)
 

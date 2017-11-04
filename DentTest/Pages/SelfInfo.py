@@ -244,7 +244,7 @@ class SelfInfo(BasePages):
 
     #绑定/修改手机号：输入手机号
     def phone(self,phone):
-        self.find_element(*self.phone_loc).clear()
+        # self.find_element(*self.phone_loc).clear()
         self.find_element(*self.phone_loc).send_keys(phone)
 
     # 绑定/修改手机号：获取手机验证码
@@ -278,18 +278,19 @@ class SelfInfo(BasePages):
             assert t4 in tip
         else:
             assert t5 in tip
+
     #添加收货地址:点击添加收货地址
     def addaddress(self):
         self.find_element(*self.add_address_loc).click()
 
     #添加收货地址:输入用户名
     def addname(self,name):
-        self.find_element(*self.addname_loc).clear()
+        # self.find_element(*self.addname_loc).clear()
         self.find_element(*self.addname_loc).send_keys(name)
 
     #添加收货地址:输入手机号
     def addphone(self,phone):
-        self.find_element(*self.addphone_loc).clear()
+        # self.find_element(*self.addphone_loc).clear()
         self.find_element(*self.addphone_loc).send_keys(phone)
 
     #添加收货地址:增加省市区
@@ -330,7 +331,7 @@ class SelfInfo(BasePages):
 
     #编辑收货地址:编辑收货地址
     def editadd(self):
-        i = random.randint(1,4)
+        i = random.randint(1,2)
         self.find_elements(*self.editadd_loc)[i].click()
 
     # 编辑收货地址:输入用户名

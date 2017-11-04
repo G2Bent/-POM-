@@ -13,7 +13,7 @@ class LoginPage(BasePages):
     tips_loc = (By.XPATH,'//*[@id="error_tips"]')#错误提示
     findtext_loc = (By.XPATH,'//*[@class="find-pwd-box"]/h1')#找回密码页面文本
     regtext_loc = (By.XPATH,'//*[@class="user-explain"]/p[2]')#点击“注册”文本
-    re_loc = (By.XPATH,'//*[@class="user-title"]')#"个人中心"文本校验
+    # re_loc = (By.XPATH,'//*[@class="user-title"]')#"个人中心"文本校验
     logout_loc = (By.XPATH,'//*[@id="user_logout"]')#退出登录
     touxiang_loc = (By.XPATH,'//*[@id="user_head_avator"]')#个人信息icon
 
@@ -53,8 +53,8 @@ class LoginPage(BasePages):
         return self.find_element(*self.tips_loc).text
 
     #登录成功页面中的用户ID查找
-    def show_(self):
-        return self.find_element(*self.re_loc).text
+    # def show_(self):
+    #     return self.find_element(*self.re_loc).text
 
     #退出登录
     def logout(self):

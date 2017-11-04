@@ -12,7 +12,7 @@ class LoginCase(unittest.TestCase):
         cls.driver = browser()
         # cls.driver.implicitly_wait(5)
         cls.url = "http://test.dent-lab.com/login.html"
-        cls.phone = "13217665001"
+        cls.phone = "15816038158"
         cls.Unreg = "15500000000"
         cls.Cphone = "1581603815"
         cls.password = "a123456"

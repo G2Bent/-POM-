@@ -37,3 +37,4 @@ def postemail(emailnum):
     email = requests.post(url,json=payload,headers=headers,verify = False)
     return email
 print(postemail("944921374@qq.com").content)
+print(postemail("648604875@qq.com").content)

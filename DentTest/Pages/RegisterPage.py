@@ -13,7 +13,7 @@ class RegisterPage(BasePages):
     submit_loc = (By.XPATH,'//*[@id="btn_reg"]')#注册按钮
     loginurl_loc = (By.XPATH,'//*[@id="login"]')#点击登录url
     tips_loc = (By.XPATH,'//*[@id="error_tips"]')#错误提示
-    re_loc = (By.XPATH, '//*[@class="user-title"]')  # "个人中心"文本校验
+    # re_loc = (By.XPATH, '//*[@class="user-title"]')  # "个人中心"文本校验
 
     # 操作
     # 通过继承覆盖(overriding)方法：如果子类和父类的方法名相同，优先用子类自己的方法
@@ -30,8 +30,8 @@ class RegisterPage(BasePages):
     def input_name(self,num):
         self.find_element(*self.username_loc).send_keys(num)
         self.find_element(*self.verify_code_btn).click()
-        time.sleep(4)
-        if len(num) >= len("11"):
+        time.sleep(5)
+        if len(num) >= 11:
             self.find_element(*self.verify_code_loc).send_keys(verify_code(num))
         else:
             self.find_element(*self.verify_code_loc).send_keys(num)
@@ -68,6 +68,6 @@ class RegisterPage(BasePages):
         return self.find_element(*self.tips_loc).text
 
     #个人中心，注册成功校验
-    def show_(self):
-        return self.find_element(*self.re_loc).text
+    # def show_(self):
+    #     return self.find_element(*self.re_loc).text
 
