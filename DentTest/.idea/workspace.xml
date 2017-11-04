@@ -72,6 +72,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="result.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/report/result.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="post.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API/post.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="466">
+              <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -95,8 +105,8 @@
       <file leaf-file-name="Dent_01RegisterCase.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/Dent_01RegisterCase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+            <state relative-caret-position="504">
+              <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -104,21 +114,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pages/LoginPage.py">
+      <file leaf-file-name="Exception.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/Exception.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="196">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dent_02LoginCase.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestCase/Dent_02LoginCase.py">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestCase/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="113" selection-end-column="14" />
+            <state relative-caret-position="262">
+              <caret line="54" column="47" lean-forward="false" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -136,22 +146,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterPage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pages/RegisterPage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="72" column="0" lean-forward="true" selection-start-line="70" selection-start-column="6" selection-end-line="72" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Dent_04SelfInfo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/Dent_04SelfInfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1051">
+            <state relative-caret-position="-4577">
               <caret line="125" column="25" lean-forward="false" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
@@ -182,7 +180,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SelfInfo.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SelfInfo.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pages/SelfInfo.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="779">
@@ -195,7 +193,7 @@
       <file leaf-file-name="Dent_05ForgotPassword.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/Dent_05ForgotPassword.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2940">
+            <state relative-caret-position="-2740">
               <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="32" />
               <folding />
             </state>
@@ -264,7 +262,6 @@
         <option value="$PROJECT_DIR$/Common/Login.py" />
         <option value="$PROJECT_DIR$/Pages/RandNum.py" />
         <option value="$PROJECT_DIR$/report/result.html" />
-        <option value="$PROJECT_DIR$/index.py" />
         <option value="$PROJECT_DIR$/TestCase/Dent_05ForgotPassword.py" />
         <option value="$PROJECT_DIR$/TestCase/Dent_02LoginCase.py" />
         <option value="$PROJECT_DIR$/Pages/RegisterPage.py" />
@@ -274,6 +271,7 @@
         <option value="$PROJECT_DIR$/Pages/SelfInfo.py" />
         <option value="$PROJECT_DIR$/TestCase/Dent_04SelfInfo.py" />
         <option value="$PROJECT_DIR$/API/post.py" />
+        <option value="$PROJECT_DIR$/index.py" />
       </list>
     </option>
   </component>
@@ -284,8 +282,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1037" />
-    <option name="y" value="40" />
+    <option name="x" value="550" />
     <option name="width" value="1324" />
     <option name="height" value="1047" />
   </component>
@@ -723,7 +720,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1037" y="40" width="1324" height="1047" extended-state="0" />
+    <frame x="550" y="0" width="1324" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16284403" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -802,14 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2286">
           <caret line="1590" column="0" lean-forward="false" selection-start-line="1590" selection-start-column="0" selection-end-line="1590" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,24 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#20#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pages/RegisterPage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
@@ -940,14 +911,6 @@
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/Dent_05ForgotPassword.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2940">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -977,16 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/Dent_01RegisterCase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/report/result.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -995,17 +948,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/SelfInfo.py">
+    <entry file="file://$PROJECT_DIR$/API/post.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="333" column="30" lean-forward="false" selection-start-line="333" selection-start-column="30" selection-end-line="333" selection-end-column="30" />
+        <state relative-caret-position="466">
+          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="54" column="47" lean-forward="false" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/Dent_05ForgotPassword.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2740">
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/Dent_04SelfInfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1051">
+        <state relative-caret-position="-4577">
           <caret line="125" column="25" lean-forward="false" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
@@ -1035,10 +1004,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/post.py">
+    <entry file="file://$PROJECT_DIR$/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="592">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/Dent_01RegisterCase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/SelfInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="333" column="30" lean-forward="false" selection-start-line="333" selection-start-column="30" selection-end-line="333" selection-end-column="30" />
           <folding />
         </state>
       </provider>
