@@ -9,7 +9,7 @@ class LoginOut(unittest.TestCase):
         cls.driver = browser()
         # cls.driver.implicitly_wait(5)
         cls.url = "http://test.dent-lab.com/login.html"
-        cls.Pusername = "15816038158"
+        cls.Pusername = "13217665001"
         cls.password = "a123456"
         cls.Eusername = "944921374@qq.com"
         cls.title = "德雅医疗-Dent Lab"

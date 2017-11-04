@@ -15,7 +15,7 @@ class RegisterCase(unittest.TestCase):
         cls.driver = browser()
         cls.title = "德雅医疗-Dent Lab"
         cls.url = "http://test.dent-lab.com/register.html"
-        cls.Pusername = "15816038158"
+        cls.Pusername = "13217665001"
         cls.ErPusername1 = "1550000000"
         cls.password = "a123456"
         cls.Erpassword = "a12"

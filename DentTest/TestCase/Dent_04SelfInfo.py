@@ -13,7 +13,7 @@ class SelfCase(unittest.TestCase):
         cls.driver = browser()
         # cls.driver.implicitly_wait(5)
         cls.url = "http://test.dent-lab.com/login.html"
-        cls.user = "15816038158"
+        cls.user = "13217665001"
         cls.phone ="18814128583"
         cls.name1 = "中国恒大"
         cls.name2 = "a"
