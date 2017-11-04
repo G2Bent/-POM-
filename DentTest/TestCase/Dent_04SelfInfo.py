@@ -11,7 +11,7 @@ class SelfCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.driver = browser()
-        cls.driver.implicitly_wait(30)
+        # cls.driver.implicitly_wait(5)
         cls.url = "http://test.dent-lab.com/login.html"
         cls.user = "15816038158"
         cls.phone ="18814128583"

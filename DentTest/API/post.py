@@ -14,10 +14,10 @@ def postphone():
         "Accept-Encoding":"gzip, deflate",
         "Accept":"application/json",
     }
-    payload = {"phone":"15816038158"}
+    payload = {"phone":"13217665001"}
     phone = requests.post(url,json=payload,headers=headers,verify = False)
     return phone
-print(postphone())
+print(postphone().content)
 
 def postemail(emailnum):
     url = 'http://192.168.2.72:5001/api/User/deleteuserbyemail'
@@ -36,3 +36,4 @@ def postemail(emailnum):
     payload = {"email":emailnum}
     email = requests.post(url,json=payload,headers=headers,verify = False)
     return email
+

@@ -18,25 +18,28 @@
     <SUITE FILE_PATH="coverage/DentTest$Data.coverage" NAME="Data Coverage Results" MODIFIED="1509594855277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
     <SUITE FILE_PATH="coverage/DentTest$Config.coverage" NAME="Config Coverage Results" MODIFIED="1508563359611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BasePage" />
     <SUITE FILE_PATH="coverage/DentTest$login_cookie.coverage" NAME="login_cookie Coverage Results" MODIFIED="1508721822521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Common" />
+    <SUITE FILE_PATH="coverage/DentTest$RandNum.coverage" NAME="RandNum Coverage Results" MODIFIED="1509678704623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pages" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_04SelfInfo_SelfCase_test_self15.coverage" NAME="Unittests for Dent_04SelfInfo.SelfCase.test_self15 Coverage Results" MODIFIED="1508915170694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$02post.coverage" NAME="02post Coverage Results" MODIFIED="1509518728258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/API/case" />
     <SUITE FILE_PATH="coverage/DentTest$ForgotPassword.coverage" NAME="ForgotPassword Coverage Results" MODIFIED="1509594058072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pages" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_04SelfInfo_SelfCase_test_self18.coverage" NAME="Unittests for Dent_04SelfInfo.SelfCase.test_self18 Coverage Results" MODIFIED="1508917414707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
-    <SUITE FILE_PATH="coverage/DentTest$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1509323788709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pages" />
+    <SUITE FILE_PATH="coverage/DentTest$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1509678041536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_in_LoginCase_py.coverage" NAME="Unittests in LoginCase.py Coverage Results" MODIFIED="1508557258726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_01RegisterCase_RegisterCase_test_reg01.coverage" NAME="Unittests for Dent_01RegisterCase.RegisterCase.test_reg01 Coverage Results" MODIFIED="1509613983908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$SelfInfo.coverage" NAME="SelfInfo Coverage Results" MODIFIED="1508728944653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pages" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_04SelfInfo_SelfCase_test_self23.coverage" NAME="Unittests for Dent_04SelfInfo.SelfCase.test_self23 Coverage Results" MODIFIED="1508981148677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_in_Dent_03logout_py.coverage" NAME="Unittests in Dent_03logout.py Coverage Results" MODIFIED="1509615549082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
+    <SUITE FILE_PATH="coverage/DentTest$Unittests_for_test_SelfCase_test_self2.coverage" NAME="Unittests for test.SelfCase.test_self2 Coverage Results" MODIFIED="1509701102755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Dent_01RegisterCase.coverage" NAME="Dent_01RegisterCase Coverage Results" MODIFIED="1509083784894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_04SelfInfo_SelfCase_test_self29.coverage" NAME="Unittests for Dent_04SelfInfo.SelfCase.test_self29 Coverage Results" MODIFIED="1508989574771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_04SelfInfo_SelfCase_test_self6.coverage" NAME="Unittests for Dent_04SelfInfo.SelfCase.test_self6 Coverage Results" MODIFIED="1508829235159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Dent_02LoginCase.coverage" NAME="Dent_02LoginCase Coverage Results" MODIFIED="1508570952309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
-    <SUITE FILE_PATH="coverage/DentTest$index.coverage" NAME="index Coverage Results" MODIFIED="1509668672384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DentTest$Unittests_for_test_SelfCase_test_self1.coverage" NAME="Unittests for test.SelfCase.test_self1 Coverage Results" MODIFIED="1509701062333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
+    <SUITE FILE_PATH="coverage/DentTest$index.coverage" NAME="index Coverage Results" MODIFIED="1509701947636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_04SelfInfo_SelfCase_test_self35.coverage" NAME="Unittests for Dent_04SelfInfo.SelfCase.test_self35 Coverage Results" MODIFIED="1509005822067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Dent_03logout.coverage" NAME="Dent_03logout Coverage Results" MODIFIED="1508571804972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$LoginPage.coverage" NAME="LoginPage Coverage Results" MODIFIED="1508571287891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pages" />
-    <SUITE FILE_PATH="coverage/DentTest$post.coverage" NAME="post Coverage Results" MODIFIED="1509614332462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/API" />
+    <SUITE FILE_PATH="coverage/DentTest$post.coverage" NAME="post Coverage Results" MODIFIED="1509680242645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/API" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_LoginCase_LoginCase_test_login6.coverage" NAME="Unittests for LoginCase.LoginCase.test_login6 Coverage Results" MODIFIED="1508551015951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_05ForgotPassword_LoginCase_test_forget7.coverage" NAME="Unittests for Dent_05ForgotPassword.LoginCase.test_forget7 Coverage Results" MODIFIED="1509594921824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_04SelfInfo_SelfCase_test_self31.coverage" NAME="Unittests for Dent_04SelfInfo.SelfCase.test_self31 Coverage Results" MODIFIED="1509004754916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
@@ -53,6 +56,7 @@
     <SUITE FILE_PATH="coverage/DentTest$Unittests_in_RegisterCase_py.coverage" NAME="Unittests in RegisterCase.py Coverage Results" MODIFIED="1508398575060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_02LoginCase_LoginCase_test_login1.coverage" NAME="Unittests for Dent_02LoginCase.LoginCase.test_login1 Coverage Results" MODIFIED="1508915940714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Excel.coverage" NAME="Excel Coverage Results" MODIFIED="1508557214468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Excel_Data" />
+    <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_01RegisterCase_RegisterCase_test_reg7.coverage" NAME="Unittests for Dent_01RegisterCase.RegisterCase.test_reg7 Coverage Results" MODIFIED="1509680658238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_LoginCase_LoginCase_test_login1.coverage" NAME="Unittests for LoginCase.LoginCase.test_login1 Coverage Results" MODIFIED="1508550537464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1508917239766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pages" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_04SelfInfo_SelfCase_test_self3.coverage" NAME="Unittests for Dent_04SelfInfo.SelfCase.test_self3 Coverage Results" MODIFIED="1508809147120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
@@ -67,28 +71,8 @@
       <file leaf-file-name="index.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dent_03logout.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestCase/Dent_03logout.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="980">
-              <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginPage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pages/LoginPage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1568">
-              <caret line="59" column="8" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+            <state relative-caret-position="-168">
+              <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -97,8 +81,8 @@
       <file leaf-file-name="Dent_01RegisterCase.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/Dent_01RegisterCase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+            <state relative-caret-position="-3384">
+              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -109,8 +93,18 @@
       <file leaf-file-name="Dent_02LoginCase.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/Dent_02LoginCase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2212">
-              <caret line="84" column="25" lean-forward="true" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+            <state relative-caret-position="196">
+              <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dent_03logout.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestCase/Dent_03logout.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -119,33 +113,43 @@
       <file leaf-file-name="Dent_04SelfInfo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/Dent_04SelfInfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+            <state relative-caret-position="374">
+              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
-                <element signature="e#2049#2225#0" expanded="false" />
-                <element signature="e#2261#2480#0" expanded="false" />
-                <element signature="e#2516#2765#0" expanded="false" />
-                <element signature="e#2801#2982#0" expanded="false" />
-                <element signature="e#3018#3231#0" expanded="false" />
-                <element signature="e#3267#3517#0" expanded="false" />
-                <element signature="e#3553#3839#0" expanded="false" />
-                <element signature="e#3876#4165#0" expanded="false" />
-                <element signature="e#4202#4488#0" expanded="false" />
-                <element signature="e#4525#4777#0" expanded="false" />
-                <element signature="e#4814#5082#0" expanded="false" />
-                <element signature="e#5119#5352#0" expanded="false" />
-                <element signature="e#5389#5618#0" expanded="false" />
-                <element signature="e#5655#5808#0" expanded="false" />
-                <element signature="e#5845#6128#0" expanded="false" />
-                <element signature="e#6165#6475#0" expanded="false" />
-                <element signature="e#6512#6699#0" expanded="false" />
-                <element signature="e#6736#7037#0" expanded="false" />
-                <element signature="e#7074#7349#0" expanded="false" />
-                <element signature="e#7386#7618#0" expanded="false" />
-                <element signature="e#7655#7879#0" expanded="false" />
-                <element signature="e#7916#8149#0" expanded="false" />
+                <element signature="e#2050#2226#0" expanded="false" />
+                <element signature="e#2262#2481#0" expanded="false" />
+                <element signature="e#2517#2766#0" expanded="false" />
+                <element signature="e#2802#2983#0" expanded="false" />
+                <element signature="e#3019#3232#0" expanded="false" />
+                <element signature="e#3268#3518#0" expanded="false" />
+                <element signature="e#3554#3840#0" expanded="false" />
+                <element signature="e#3877#4166#0" expanded="false" />
+                <element signature="e#4203#4489#0" expanded="false" />
+                <element signature="e#4526#4778#0" expanded="false" />
+                <element signature="e#4815#5083#0" expanded="false" />
+                <element signature="e#5120#5353#0" expanded="false" />
+                <element signature="e#5390#5619#0" expanded="false" />
+                <element signature="e#5656#5809#0" expanded="false" />
+                <element signature="e#5846#6129#0" expanded="false" />
+                <element signature="e#6166#6476#0" expanded="false" />
+                <element signature="e#6513#6700#0" expanded="false" />
+                <element signature="e#6737#7038#0" expanded="false" />
+                <element signature="e#7075#7350#0" expanded="false" />
+                <element signature="e#7387#7619#0" expanded="false" />
+                <element signature="e#7656#7880#0" expanded="false" />
+                <element signature="e#7917#8150#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dent_05ForgotPassword.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestCase/Dent_05ForgotPassword.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -153,8 +157,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+            <state relative-caret-position="457">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -162,21 +166,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/report/result.html">
+      <file leaf-file-name="RegisterPage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pages/RegisterPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="924">
+              <caret line="36" column="66" lean-forward="false" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelfInfo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pages/SelfInfo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SelfInfo.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Pages/SelfInfo.py">
+      <file leaf-file-name="BasePage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BasePages/BasePage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="128" column="8" lean-forward="false" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="8" />
+            <state relative-caret-position="-224">
+              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -201,8 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Pages/BDEmail.py" />
-        <option value="$PROJECT_DIR$/BasePage/Selenium2.py" />
         <option value="$PROJECT_DIR$/BasePage/BasePage.py" />
         <option value="$PROJECT_DIR$/Excel_Data/Excel.py" />
         <option value="$PROJECT_DIR$/Tips/All_Tips.py" />
@@ -224,12 +238,7 @@
         <option value="$PROJECT_DIR$/Pages/Logout.py" />
         <option value="$PROJECT_DIR$/Common/login_cookie.py" />
         <option value="$PROJECT_DIR$/TestCase/Dent_SelfInfo.py" />
-        <option value="$PROJECT_DIR$/TestCase/__init__.py" />
-        <option value="$PROJECT_DIR$/Pages/RegisterPage.py" />
-        <option value="$PROJECT_DIR$/TestCase/Dent_02LoginCase.py" />
-        <option value="$PROJECT_DIR$/TestCase/Dent_03logout.py" />
         <option value="$PROJECT_DIR$/TestCase/Dent_05BDphone.py" />
-        <option value="$PROJECT_DIR$/BasePages/BasePage.py" />
         <option value="$PROJECT_DIR$/Pages/__init__.py" />
         <option value="$PROJECT_DIR$/API/run_main.py" />
         <option value="$PROJECT_DIR$/API/case/loginblog.py" />
@@ -241,17 +250,24 @@
         <option value="$PROJECT_DIR$/API/case/post.py" />
         <option value="$PROJECT_DIR$/API/case/02post.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/TestCase/Dent_05ForgotPassword.py" />
         <option value="$PROJECT_DIR$/Pages/ForgotPassword.py" />
         <option value="$PROJECT_DIR$/Common/Data.py" />
-        <option value="$PROJECT_DIR$/API/post.py" />
         <option value="$PROJECT_DIR$/Pages/LoginPage.py" />
-        <option value="$PROJECT_DIR$/TestCase/Dent_04SelfInfo.py" />
-        <option value="$PROJECT_DIR$/TestCase/test.py" />
         <option value="$PROJECT_DIR$/report/result.html" />
         <option value="$PROJECT_DIR$/Pages/SelfInfo.py" />
+        <option value="$PROJECT_DIR$/TestCase/__init__.py" />
+        <option value="$PROJECT_DIR$/Pages/RegisterPage.py" />
+        <option value="$PROJECT_DIR$/Pages/RandNum.py" />
+        <option value="$PROJECT_DIR$/API/post.py" />
+        <option value="$PROJECT_DIR$/BasePages/BasePage.py" />
+        <option value="$PROJECT_DIR$/TestCase/test.py" />
         <option value="$PROJECT_DIR$/index.py" />
+        <option value="$PROJECT_DIR$/Common/Login.py" />
         <option value="$PROJECT_DIR$/TestCase/Dent_01RegisterCase.py" />
+        <option value="$PROJECT_DIR$/TestCase/Dent_02LoginCase.py" />
+        <option value="$PROJECT_DIR$/TestCase/Dent_03logout.py" />
+        <option value="$PROJECT_DIR$/TestCase/Dent_04SelfInfo.py" />
+        <option value="$PROJECT_DIR$/TestCase/Dent_05ForgotPassword.py" />
       </list>
     </option>
   </component>
@@ -262,8 +278,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="717" />
-    <option name="y" value="10" />
+    <option name="x" value="426" />
+    <option name="y" value="22" />
     <option name="width" value="1324" />
     <option name="height" value="1047" />
   </component>
@@ -282,7 +298,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -333,6 +348,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DentTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DentTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Autolt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -353,6 +382,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -389,7 +419,26 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.index">
-    <configuration default="false" name="Unittests for Dent_04SelfInfo.SelfCase.test_self2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="post" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DentTest" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/API/post.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests for Dent_01RegisterCase.RegisterCase.test_reg7" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -401,11 +450,11 @@
       <module name="DentTest" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Dent_04SelfInfo.SelfCase.test_self2&quot;" />
+      <option name="_new_target" value="&quot;Dent_01RegisterCase.RegisterCase.test_reg7&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in Dent_03logout.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests for test.SelfCase.test_self2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -417,11 +466,11 @@
       <module name="DentTest" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/TestCase/Dent_03logout.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test.SelfCase.test_self2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests for Dent_04SelfInfo.SelfCase.test_self1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests for test.SelfCase.test_self1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -433,7 +482,7 @@
       <module name="DentTest" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Dent_04SelfInfo.SelfCase.test_self1&quot;" />
+      <option name="_new_target" value="&quot;test.SelfCase.test_self1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
@@ -454,9 +503,6 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="result.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/DentTest/report/result.html">
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -608,19 +654,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_04SelfInfo.SelfCase.test_self2" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in Dent_03logout.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_04SelfInfo.SelfCase.test_self1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.index" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.result.html" />
+      <item index="0" class="java.lang.String" itemvalue="Python.post" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_01RegisterCase.RegisterCase.test_reg7" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test.SelfCase.test_self2" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test.SelfCase.test_self1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.index" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.index" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.result.html" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_04SelfInfo.SelfCase.test_self1" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_04SelfInfo.SelfCase.test_self2" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in Dent_03logout.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test.SelfCase.test_self2" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test.SelfCase.test_self1" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_01RegisterCase.RegisterCase.test_reg7" />
+        <item index="4" class="java.lang.String" itemvalue="Python.post" />
       </list>
     </recent_temporary>
   </component>
@@ -641,46 +687,46 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_Dent_01RegisterCase_RegisterCase_test_reg01 - 2017.11.02 at 17h 12m 05s.xml">
-      <configuration name="Unittests for Dent_01RegisterCase.RegisterCase.test_reg01" configurationId="tests" />
+    <history-entry file="Unittests_for_Dent_01RegisterCase_RegisterCase_test_reg7 - 2017.11.03 at 11h 29m 30s.xml">
+      <configuration name="Unittests for Dent_01RegisterCase.RegisterCase.test_reg7" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Dent_01RegisterCase_RegisterCase_test_reg01 - 2017.11.02 at 17h 12m 23s.xml">
-      <configuration name="Unittests for Dent_01RegisterCase.RegisterCase.test_reg01" configurationId="tests" />
+    <history-entry file="Unittests_for_Dent_01RegisterCase_RegisterCase_test_reg7 - 2017.11.03 at 11h 31m 56s.xml">
+      <configuration name="Unittests for Dent_01RegisterCase.RegisterCase.test_reg7" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Dent_01RegisterCase_RegisterCase_test_reg01 - 2017.11.02 at 17h 13m 13s.xml">
-      <configuration name="Unittests for Dent_01RegisterCase.RegisterCase.test_reg01" configurationId="tests" />
+    <history-entry file="Unittests_for_Dent_01RegisterCase_RegisterCase_test_reg7 - 2017.11.03 at 11h 32m 25s.xml">
+      <configuration name="Unittests for Dent_01RegisterCase.RegisterCase.test_reg7" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Dent_04SelfInfo_SelfCase_test_self1 - 2017.11.02 at 17h 43m 09s.xml">
-      <configuration name="Unittests for Dent_04SelfInfo.SelfCase.test_self1" configurationId="tests" />
+    <history-entry file="Unittests_for_Dent_01RegisterCase_RegisterCase_test_reg7 - 2017.11.03 at 11h 34m 44s.xml">
+      <configuration name="Unittests for Dent_01RegisterCase.RegisterCase.test_reg7" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Dent_04SelfInfo_SelfCase_test_self1 - 2017.11.02 at 17h 43m 43s.xml">
-      <configuration name="Unittests for Dent_04SelfInfo.SelfCase.test_self1" configurationId="tests" />
+    <history-entry file="Unittests_for_Dent_01RegisterCase_RegisterCase_test_reg7 - 2017.11.03 at 11h 35m 21s.xml">
+      <configuration name="Unittests for Dent_01RegisterCase.RegisterCase.test_reg7" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Dent_04SelfInfo_SelfCase_test_self2 - 2017.11.02 at 17h 40m 47s.xml">
-      <configuration name="Unittests for Dent_04SelfInfo.SelfCase.test_self2" configurationId="tests" />
+    <history-entry file="Unittests_for_Dent_01RegisterCase_RegisterCase_test_reg7 - 2017.11.03 at 11h 38m 01s.xml">
+      <configuration name="Unittests for Dent_01RegisterCase.RegisterCase.test_reg7" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Dent_04SelfInfo_SelfCase_test_self2 - 2017.11.02 at 17h 41m 23s.xml">
-      <configuration name="Unittests for Dent_04SelfInfo.SelfCase.test_self2" configurationId="tests" />
+    <history-entry file="Unittests_for_Dent_01RegisterCase_RegisterCase_test_reg7 - 2017.11.03 at 11h 44m 39s.xml">
+      <configuration name="Unittests for Dent_01RegisterCase.RegisterCase.test_reg7" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Dent_04SelfInfo_SelfCase_test_self2 - 2017.11.02 at 17h 41m 50s.xml">
-      <configuration name="Unittests for Dent_04SelfInfo.SelfCase.test_self2" configurationId="tests" />
+    <history-entry file="Unittests_for_test_SelfCase_test_self1 - 2017.11.03 at 17h 24m 22s.xml">
+      <configuration name="Unittests for test.SelfCase.test_self1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Dent_04SelfInfo_SelfCase_test_self2 - 2017.11.02 at 17h 42m 54s.xml">
-      <configuration name="Unittests for Dent_04SelfInfo.SelfCase.test_self2" configurationId="tests" />
+    <history-entry file="Unittests_for_test_SelfCase_test_self2 - 2017.11.03 at 17h 23m 58s.xml">
+      <configuration name="Unittests for test.SelfCase.test_self2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_Dent_03logout_py - 2017.11.02 at 17h 39m 39s.xml">
-      <configuration name="Unittests in Dent_03logout.py" configurationId="tests" />
+    <history-entry file="Unittests_for_test_SelfCase_test_self2 - 2017.11.03 at 17h 25m 02s.xml">
+      <configuration name="Unittests for test.SelfCase.test_self2" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="717" y="10" width="1324" height="1047" extended-state="0" />
+    <frame x="426" y="22" width="1324" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16131498" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3372591" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20449679" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -710,10 +756,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/image/个人中心/修改密码新密码格式错误.png" />
-    <entry file="file://$PROJECT_DIR$/image/个人中心/编辑个人信息用户名大于16字符.png" />
-    <entry file="file://$PROJECT_DIR$/image/个人中心/编辑个人信息用户名少于两字符.png" />
-    <entry file="file://$PROJECT_DIR$/image/个人中心/修改密码确认新密码为空.png" />
     <entry file="file://$PROJECT_DIR$/image/个人中心/修改密码新密码为空.png" />
     <entry file="file://$PROJECT_DIR$/image/个人中心/修改密码原密码为空.png" />
     <entry file="file://$PROJECT_DIR$/BasePages/Selenium2.py">
@@ -721,13 +763,6 @@
         <state relative-caret-position="56">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -745,14 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="236" column="8" lean-forward="false" selection-start-line="236" selection-start-column="8" selection-end-line="236" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BasePages/BasePage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/RegisterPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="58" column="16" lean-forward="false" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API/run_main.py" />
     <entry file="file://$PROJECT_DIR$/API/case/loginblog.py" />
     <entry file="file://$PROJECT_DIR$/API/case/test_01.py" />
@@ -824,33 +844,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/Dent_05ForgotPassword.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196">
-          <caret line="100" column="27" lean-forward="true" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pages/ForgotPassword.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-788">
           <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API/post.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/Dent_02LoginCase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2212">
-          <caret line="84" column="25" lean-forward="true" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#0#30#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -858,22 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1568">
           <caret line="59" column="8" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/Dent_03logout.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -886,70 +870,165 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.py">
+    <entry file="file://$PROJECT_DIR$/report/result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/AddAddress.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/RandNum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/RegisterPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="36" column="66" lean-forward="false" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3.6.2/Lib/unittest/suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-602">
+          <caret line="91" column="6" lean-forward="false" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        <state relative-caret-position="457">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/Dent_01RegisterCase.py">
+    <entry file="file://$PROJECT_DIR$/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-168">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/Dent_04SelfInfo.py">
+    <entry file="file://$PROJECT_DIR$/Common/Login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#2049#2225#0" expanded="false" />
-            <element signature="e#2261#2480#0" expanded="false" />
-            <element signature="e#2516#2765#0" expanded="false" />
-            <element signature="e#2801#2982#0" expanded="false" />
-            <element signature="e#3018#3231#0" expanded="false" />
-            <element signature="e#3267#3517#0" expanded="false" />
-            <element signature="e#3553#3839#0" expanded="false" />
-            <element signature="e#3876#4165#0" expanded="false" />
-            <element signature="e#4202#4488#0" expanded="false" />
-            <element signature="e#4525#4777#0" expanded="false" />
-            <element signature="e#4814#5082#0" expanded="false" />
-            <element signature="e#5119#5352#0" expanded="false" />
-            <element signature="e#5389#5618#0" expanded="false" />
-            <element signature="e#5655#5808#0" expanded="false" />
-            <element signature="e#5845#6128#0" expanded="false" />
-            <element signature="e#6165#6475#0" expanded="false" />
-            <element signature="e#6512#6699#0" expanded="false" />
-            <element signature="e#6736#7037#0" expanded="false" />
-            <element signature="e#7074#7349#0" expanded="false" />
-            <element signature="e#7386#7618#0" expanded="false" />
-            <element signature="e#7655#7879#0" expanded="false" />
-            <element signature="e#7916#8149#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pages/SelfInfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="128" column="8" lean-forward="false" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="8" />
+        <state relative-caret-position="56">
+          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasePages/BasePage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-224">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/Dent_01RegisterCase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3384">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/Dent_02LoginCase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/Dent_03logout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/Dent_04SelfInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#2050#2226#0" expanded="false" />
+            <element signature="e#2262#2481#0" expanded="false" />
+            <element signature="e#2517#2766#0" expanded="false" />
+            <element signature="e#2802#2983#0" expanded="false" />
+            <element signature="e#3019#3232#0" expanded="false" />
+            <element signature="e#3268#3518#0" expanded="false" />
+            <element signature="e#3554#3840#0" expanded="false" />
+            <element signature="e#3877#4166#0" expanded="false" />
+            <element signature="e#4203#4489#0" expanded="false" />
+            <element signature="e#4526#4778#0" expanded="false" />
+            <element signature="e#4815#5083#0" expanded="false" />
+            <element signature="e#5120#5353#0" expanded="false" />
+            <element signature="e#5390#5619#0" expanded="false" />
+            <element signature="e#5656#5809#0" expanded="false" />
+            <element signature="e#5846#6129#0" expanded="false" />
+            <element signature="e#6166#6476#0" expanded="false" />
+            <element signature="e#6513#6700#0" expanded="false" />
+            <element signature="e#6737#7038#0" expanded="false" />
+            <element signature="e#7075#7350#0" expanded="false" />
+            <element signature="e#7387#7619#0" expanded="false" />
+            <element signature="e#7656#7880#0" expanded="false" />
+            <element signature="e#7917#8150#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/Dent_05ForgotPassword.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>

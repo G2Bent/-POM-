@@ -7,7 +7,7 @@ class LoginOut(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.driver = browser()
-        cls.driver.implicitly_wait(30)
+        # cls.driver.implicitly_wait(5)
         cls.url = "http://test.dent-lab.com/login.html"
         cls.Pusername = "15816038158"
         cls.password = "a123456"
@@ -23,7 +23,6 @@ class LoginOut(unittest.TestCase):
         login_page.click_submit()
         time.sleep(3)
         login_page.logout()
-        time.sleep(5)
 
     def test_logout2(self):
         """退出成功"""
@@ -34,7 +33,6 @@ class LoginOut(unittest.TestCase):
         login_page.click_submit()
         time.sleep(3)
         login_page.logout()
-        time.sleep(5)
 
     @classmethod
     def tearDownClass(cls):

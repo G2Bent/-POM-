@@ -5,6 +5,7 @@ from BasePages.Selenium2 import browser
 from BasePages.BasePage import login_url
 from selenium import webdriver
 from API import post
+from Pages.RandNum import PhoneNum,EmailNum
 from HTMLTestRunner import HTMLTestRunner
 
 class RegisterCase(unittest.TestCase):
@@ -12,7 +13,6 @@ class RegisterCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.driver = browser()
-        cls.driver.implicitly_wait(30)
         cls.title = "德雅医疗-Dent Lab"
         cls.url = "http://test.dent-lab.com/register.html"
         cls.Pusername = "15816038158"
@@ -107,11 +107,7 @@ class RegisterCase(unittest.TestCase):
         # #调用点击注册组件
         # LoginPage(self.driver,self.url,"黑格科技").click_reg()
         #调用用户名输入组件
-        reg_page.input_username(self.Pusername)
-        #点击获取验证码
-        reg_page.click_verify()
-        #输入验证码
-        reg_page.input_verify(self.Pusername)
+        reg_page.input_name(PhoneNum())
         #调用密码输入组件
         reg_page.input_password(self.password)
         #确认密码

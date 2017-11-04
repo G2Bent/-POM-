@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from BasePages.BasePage import BasePages
 from Common.Data import verify_code
+import time
 
 class RegisterPage(BasePages):
     #定位器，通过元素属性定位元素对象
@@ -24,6 +25,16 @@ class RegisterPage(BasePages):
     #输入用户名：调用send_keys对象，输入手机号/邮箱
     def input_username(self,username):
         self.find_element(*self.username_loc).send_keys(username)
+
+    #输入用户名：调用send_keys对象，输入手机号/邮箱，点击获取邮箱，输入邮箱
+    def input_name(self,num):
+        self.find_element(*self.username_loc).send_keys(num)
+        self.find_element(*self.verify_code_btn).click()
+        time.sleep(4)
+        if len(num) >= len("11"):
+            self.find_element(*self.verify_code_loc).send_keys(verify_code(num))
+        else:
+            self.find_element(*self.verify_code_loc).send_keys(num)
 
     #输入密码：调用send_keys对象，输入密码
     def input_password(self,password):

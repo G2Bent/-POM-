@@ -10,7 +10,7 @@ class LoginCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.driver = browser()
-        cls.driver.implicitly_wait(30)
+        # cls.driver.implicitly_wait(5)
         cls.url = "http://test.dent-lab.com/login.html"
         cls.phone = "15816038158"
         cls.Unreg = "15500000000"
@@ -119,21 +119,21 @@ class LoginCase(unittest.TestCase):
         time.sleep(2)
         driver.quit()
 
-if __name__ == '__main__':
-    testunit = unittest.TestSuite()
-    # 将测试用例加入到测试容器中
-    for i in range(1, 8):
-        testunit.addTest(LoginCase("test_login%s"%str(i)))
-    now = time.strftime("%Y-%m-%d %H_%M_%S")
-    report_name = r'..\report\\' + str(now) + '_result.html'
-    fp = open(report_name, 'wb')
-    Runner = HTMLTestRunner(
-        stream=fp,
-        title='手机登录测试报告',
-        description='测试用例执行情况'
-    )
-    Runner.run(testunit)
-    fp.close()
+# if __name__ == '__main__':
+#     testunit = unittest.TestSuite()
+#     # 将测试用例加入到测试容器中
+#     for i in range(1, 8):
+#         testunit.addTest(LoginCase("test_login%s"%str(i)))
+#     now = time.strftime("%Y-%m-%d %H_%M_%S")
+#     report_name = r'..\report\\' + str(now) + '_result.html'
+#     fp = open(report_name, 'wb')
+#     Runner = HTMLTestRunner(
+#         stream=fp,
+#         title='手机登录测试报告',
+#         description='测试用例执行情况'
+#     )
+#     Runner.run(testunit)
+#     fp.close()
 
 
 

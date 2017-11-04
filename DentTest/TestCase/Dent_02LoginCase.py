@@ -10,7 +10,7 @@ class LoginCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.driver = browser()
-        cls.driver.implicitly_wait(30)
+        # cls.driver.implicitly_wait(5)
         cls.url = "http://test.dent-lab.com/login.html"
         cls.Pusername = "15816038158"
         cls.ErPusername1 = "15500000000"

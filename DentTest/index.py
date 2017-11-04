@@ -7,7 +7,7 @@ def create_suite():
 
     discover = unittest.defaultTestLoader.discover(
         start_dir=test_dir,
-        pattern='Dent*.py',
+        pattern='test.py',
         top_level_dir=None
     )
 
@@ -25,14 +25,24 @@ def report():
         report_name = os.getcwd()+'\\report\\result.html'
     return report_name
 
-fp = open(report(),'wb')
-Runner = HTMLTestRunner.HTMLTestRunner(
-        stream=fp,
-        title='测试报告',
-        description='测试用例执行情况'
-        )
+def filepath ():
+    fp = open(report(),'wb')
+    return fp
+
+def Runnerport():
+    Runner = HTMLTestRunner.HTMLTestRunner(
+            stream=filepath(),
+            title='德雅测试报告',
+            description='测试用例执行情况'
+            )
+    return Runner
+
+def closepath():
+    fp = filepath()
+    fp.close()
+    return fp
 
 if __name__ == '__main__':
     TestSuite = create_suite()
-    Runner.run(TestSuite)
-    fp.close()
+    Runnerport().run(TestSuite)
+    closepath()
