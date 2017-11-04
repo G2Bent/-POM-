@@ -22,19 +22,6 @@ class RegisterCase(unittest.TestCase):
         cls.Eusername = "944921374@qq.com"
         cls.ErEusername1 = "944921374.com"
 
-    # def test_reg01(self):
-    #     try:
-    #         t = post.postphone(self.Pusername)
-    #         print(t+"删除成功")
-    #     except Exception as e:
-    #         print(e)
-    #     try:
-    #         post.postemail(self.Eusername)
-    #         print("删除成功")
-    #     except Exception as e:
-    #         print(e)
-
-
     def test_reg1(self):
         """密码不一致"""
         reg_page = RegisterPage(self.driver, self.url, self.title)
@@ -107,7 +94,7 @@ class RegisterCase(unittest.TestCase):
         # #调用点击注册组件
         # LoginPage(self.driver,self.url,"黑格科技").click_reg()
         #调用用户名输入组件
-        reg_page.input_name(PhoneNum())
+        reg_page.input_name(self.Pusername)
         #调用密码输入组件
         reg_page.input_password(self.password)
         #确认密码

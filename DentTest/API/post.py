@@ -1,6 +1,6 @@
 import requests
 
-def postphone():
+def postphone(phone):
     url = 'http://192.168.2.72:5001/api/User/deleteuser'
     headers={
         "User-Agent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36",
@@ -14,10 +14,10 @@ def postphone():
         "Accept-Encoding":"gzip, deflate",
         "Accept":"application/json",
     }
-    payload = {"phone":"13217665001"}
+    payload = {"phone":phone}
     phone = requests.post(url,json=payload,headers=headers,verify = False)
     return phone
-print(postphone().content)
+print(postphone("15816038158").content)
 
 def postemail(emailnum):
     url = 'http://192.168.2.72:5001/api/User/deleteuserbyemail'
@@ -36,4 +36,4 @@ def postemail(emailnum):
     payload = {"email":emailnum}
     email = requests.post(url,json=payload,headers=headers,verify = False)
     return email
-
+print(postemail("944921374@qq.com").content)
