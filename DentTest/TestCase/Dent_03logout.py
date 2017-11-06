@@ -18,11 +18,12 @@ class LoginOut(unittest.TestCase):
         """手机号退出成功"""
         login_page = LoginPage(self.driver,self.url,self.title)
         login_page.open()
-        login_page.input_username(self.Pusername)
+        login_page.input_username(self.Eusername)
         login_page.input_password(self.password)
         login_page.click_submit()
         time.sleep(2)
         login_page.logout()
+        time.sleep(2)
 
     # def test_logout2(self):
     #     """邮箱退出成功"""

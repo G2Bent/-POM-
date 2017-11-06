@@ -1,12 +1,10 @@
-import unittest,time
-from Pages.LoginPage import LoginPage
-from Pages.RegisterPage import RegisterPage
-from BasePages.Selenium2 import browser
-from BasePages.BasePage import login_url
-from selenium import webdriver
-from API import post
-from Pages.RandNum import PhoneNum,EmailNum
+import time
+import unittest
 from HTMLTestRunner import HTMLTestRunner
+
+from BasePages.Selenium2 import browser
+from Pages.RegisterPage import RegisterPage
+
 
 class RegisterCase(unittest.TestCase):
     """注册"""

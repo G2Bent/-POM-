@@ -92,5 +92,7 @@ def find_pwd(find):
 
 
 
+print(verify_code("15812487685"))
+
 
 
