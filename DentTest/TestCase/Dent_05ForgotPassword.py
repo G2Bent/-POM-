@@ -1,6 +1,10 @@
 import unittest,time
 from Pages.ForgotPassword import Forgetpwd
 from BasePages.Selenium2 import browser
+from UseData.Open_Url import *
+from UseData.PhoneEmail import *
+from UseData.Password import *
+from UseData.Txt import *
 from BasePages.BasePage import login_url
 from selenium import webdriver
 from HTMLTestRunner import HTMLTestRunner
@@ -11,19 +15,8 @@ class LoginCase(unittest.TestCase):
     def setUpClass(cls):
         cls.driver = browser()
         # cls.driver.implicitly_wait(5)
-        cls.url = "http://test.dent-lab.com/login.html"
-        cls.phone = "15816038158"
-        cls.Unreg = "15500000000"
-        cls.Cphone = "1581603815"
-        cls.password = "a123456"
-        cls.Erpassword = "a12345678"
-        cls.num = "123454"
-        cls.num2 = "1233"
-        cls.Eusername = "944921374@qq.com"
-        cls.ErEusername1 = "944921374.com"
-        cls.ErEusername2 = "9449213@qq.com"
-        cls.title = "德雅医疗-Dent Lab"
-
+        cls.url = LoginUrl()
+        cls.title = Title()
 
     def openforget(self):
         # 声明LoginPage对象
@@ -40,21 +33,19 @@ class LoginCase(unittest.TestCase):
         file.screen(name)
         return file
 
-    def test_forget(self):
+    def test_forget8(self):
         """找回密码成功"""
         forget_page =self.openforget()
-        forget_page.phone(self.phone)
-        forget_page.btnverify()
-        forget_page.verifytxt(self.phone)
-        forget_page.newpwd(self.password)
-        forget_page.renewpwd(self.password)
+        forget_page.find(FindPassword())
+        forget_page.newpwd(Pwd())
+        forget_page.renewpwd(Pwd())
         forget_page.submitbtn()
 
     def test_forget1(self):
         """输入未注册手机号"""
         forget_page = self.openforget()
         #调用输入手机号/邮箱
-        forget_page.phone(self.Cphone)
+        forget_page.phone(UnRegPhone())
         #调用点击获取验证码
         forget_page.btnverify()
         self.file(self._testMethodDoc)
@@ -62,7 +53,7 @@ class LoginCase(unittest.TestCase):
     def test_forget2(self):
         """输入错误手机号"""
         forget_page = self.openforget()
-        forget_page.phone(self.Unreg)
+        forget_page.phone(ErrorPhone())
         forget_page.btnverify()
         self.file(self._testMethodDoc)
 
@@ -75,37 +66,41 @@ class LoginCase(unittest.TestCase):
     def test_forget4(self):
         """输入错误验证码"""
         forget_page = self.openforget()
-        forget_page.phone(self.phone)
-        forget_page.verifytxt(self.num)
+        forget_page.phone(LoginEmail())
+        forget_page.verifytxt(Errorverify_6())
+        forget_page.newpwd(Pwd())
+        forget_page.renewpwd(Pwd())
         forget_page.submitbtn()
         self.file(self._testMethodDoc)
 
     def test_forget5(self):
         """输入不足6位数验证码"""
         forget_page = self.openforget()
-        forget_page.phone(self.phone)
-        forget_page.verifytxt(self.num2)
+        forget_page.phone(LoginEmail())
+        forget_page.verifytxt(Errorverify_5())
+        forget_page.newpwd(Pwd())
+        forget_page.renewpwd(Pwd())
         forget_page.submitbtn()
         self.file(self._testMethodDoc)
 
     def test_forget6(self):
         """输入错误新密码"""
         forget_page = self.openforget()
-        forget_page.phone(self.phone)
+        forget_page.phone(LoginEmail())
         forget_page.btnverify()
-        forget_page.verifytxt(self.phone)
-        forget_page.newpwd(self.num)
+        forget_page.verifytxt(LoginEmail())
+        forget_page.newpwd(ErrorPwd())
         forget_page.submitbtn()
         self.file(self._testMethodDoc)
 
     def test_forget7(self):
         """输入错误确认新密码"""
         forget_page = self.openforget()
-        forget_page.phone(self.phone)
+        forget_page.phone(LoginEmail())
         forget_page.btnverify()
-        forget_page.verifytxt(self.phone)
-        forget_page.newpwd(self.password)
-        forget_page.renewpwd(self.num)
+        forget_page.verifytxt(LoginEmail())
+        forget_page.newpwd(Pwd())
+        forget_page.renewpwd(ErrorPwd())
         forget_page.submitbtn()
         self.file(self._testMethodDoc)
 

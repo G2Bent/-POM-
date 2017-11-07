@@ -1,102 +1,94 @@
 import time
 import unittest
 from HTMLTestRunner import HTMLTestRunner
-
+from UseData.PhoneEmail import *
+from UseData.Password import *
+from UseData.Open_Url import *
 from BasePages.Selenium2 import browser
 from Pages.RegisterPage import RegisterPage
-
+from API import post
 
 class RegisterCase(unittest.TestCase):
     """注册"""
     @classmethod
     def setUpClass(cls):
         cls.driver = browser()
-        cls.title = "德雅医疗-Dent Lab"
-        cls.url = "http://test.dent-lab.com/register.html"
-        cls.Pusername = "13217665001"
-        cls.ErPusername1 = "1550000000"
-        cls.password = "a123456"
-        cls.Erpassword = "a12"
-        cls.Eusername = "944921374@qq.com"
-        cls.ErEusername1 = "944921374.com"
+        cls.title = Title()
+        cls.url = RegisterURL()
 
-    def test_reg1(self):
-        """密码不一致"""
+    def open_dent(self):
         reg_page = RegisterPage(self.driver, self.url, self.title)
         reg_page.open()
-        reg_page.input_username(self.Eusername)
-        reg_page.click_verify()
-        reg_page.input_verify(self.Eusername)
-        reg_page.input_password(self.password)
-        reg_page.input_repassword(self.Erpassword)
+        return reg_page
+
+    def test_reg0(self):
+        dele = post.postphone(RegPhone())
+        dele2 = post.postphone(RandPhone())
+        print(dele,dele2)
+
+    def test_reg1(self):
+        """两次输入的密码不一致"""
+        reg_page = self.open_dent()
+        reg_page.input_name(RandEmail())
+        # reg_page.click_verify()
+        # reg_page.input_verify(PhoneEmail.RandEmail())
+        reg_page.input_password(Pwd())
+        reg_page.input_repassword(ErrorPwd())
         reg_page.click_submit()
         assert "两次输入的密码不一致" in reg_page.show_tips()
 
     def test_reg2(self):
-        """邮箱格式错误"""
-        reg_page = RegisterPage(self.driver, self.url, self.title)
-        reg_page.open()
-        reg_page.input_username(self.ErEusername1)
+        """邮箱格式不正确"""
+        reg_page = self.open_dent()
+        reg_page.input_username(ErrorEmail())
         reg_page.click_verify()
-        reg_page.input_verify(self.Eusername)
-        reg_page.input_password(self.password)
-        reg_page.input_repassword(self.password)
-        reg_page.click_submit()
         assert "手机号/邮箱格式不正确" in reg_page.show_tips()
 
     def test_reg3(self):
-        """测试手机号码错误"""
-        reg_page = RegisterPage(self.driver, self.url, self.title)
-        reg_page.open()
-        reg_page.input_username(self.ErPusername1)
+        """手机号格式不正确"""
+        reg_page = self.open_dent()
+        reg_page.input_username(ErrorPhone())
         reg_page.click_verify()
         assert "手机号/邮箱格式不正确" in reg_page.show_tips()
 
     def test_reg4(self):
         """测试密码错误"""
-        reg_page = RegisterPage(self.driver,self.url,self.title)
-        reg_page.open()
-        reg_page.input_username(self.Eusername)
-        reg_page.click_verify()
-        reg_page.input_verify(self.Eusername)
-        reg_page.input_password(self.Erpassword)
-        reg_page.input_repassword(self.Erpassword)
+        reg_page = self.open_dent()
+        reg_page.input_name(RandEmail())
+        reg_page.input_password(ErrorPwd())
+        reg_page.input_repassword(ErrorPwd())
         reg_page.click_submit()
         assert "密码由6-16字母(区分大小写)、数字组成" in reg_page.show_tips()
 
     def test_reg5(self):
         """账号密码为空"""
-        reg_page = RegisterPage(self.driver, self.url, self.title)
-        reg_page.open()
+        reg_page = self.open_dent()
         reg_page.click_submit()
         assert "手机号/邮箱不能为空" in reg_page.show_tips()
 
     def test_reg6(self):
         """验证码错误"""
-        reg_page = RegisterPage(self.driver, self.url, self.title)
-        reg_page.open()
-        reg_page.input_username(self.Eusername)
-        # reg_page.click_verify()
+        reg_page = self.open_dent()
+        reg_page.input_username(RandEmail())
         reg_page.input_verify("123455")
-        reg_page.input_password(self.password)
-        reg_page.input_repassword(self.password)
+        reg_page.input_password(Pwd())
+        reg_page.input_repassword(Pwd())
         reg_page.click_submit()
         assert "验证码错误" in reg_page.show_tips()
 
     def test_reg7(self):
         """手机注册成功"""
         #声明LoginPage对象
-        reg_page = RegisterPage(self.driver,self.url,self.title)
         # 调用打开页面组件
-        reg_page.open()
+        reg_page = self.open_dent()
         # #调用点击注册组件
         # LoginPage(self.driver,self.url,"黑格科技").click_reg()
         #调用用户名输入组件
-        reg_page.input_name(self.Pusername)
+        reg_page.input_name(RegPhone())
         #调用密码输入组件
-        reg_page.input_password(self.password)
+        reg_page.input_password(Pwd())
         #确认密码
-        reg_page.input_repassword(self.password)
+        reg_page.input_repassword(Pwd())
         #调用登录组件
         reg_page.click_submit()
         #注册成功，文案校验
@@ -104,14 +96,11 @@ class RegisterCase(unittest.TestCase):
 
     def test_reg8(self):
         """邮箱注册成功"""
-        reg_page = RegisterPage(self.driver,self.url,self.title)
-        reg_page.open()
-        reg_page.input_username(self.Eusername)
-        reg_page.click_verify()
-        time.sleep(3)
-        reg_page.input_verify(self.Eusername)
-        reg_page.input_password(self.password)
-        reg_page.input_repassword(self.password)
+        reg_page = self.open_dent()
+        reg_page.input_name(RandEmail())
+        # reg_page.input_name("648604875@qq.com")
+        reg_page.input_password(Pwd())
+        reg_page.input_repassword(Pwd())
         reg_page.click_submit()
         # assert "个人中心" in reg_page.show_()
 

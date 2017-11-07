@@ -50,7 +50,7 @@ class RegisterPage(BasePages):
 
     #输入验证码：调用send_keys对象，输入验证码
     def input_verify(self,code):
-        if len(code) >= len("11"):
+        if len(code) >= 11:
             self.find_element(*self.verify_code_loc).send_keys(verify_code(code))
         else:
             self.find_element(*self.verify_code_loc).send_keys(code)

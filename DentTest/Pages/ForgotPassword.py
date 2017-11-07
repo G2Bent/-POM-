@@ -26,6 +26,14 @@ class Forgetpwd(BasePages):
         self.find_element(*self.Forgetpsw).click()
         time.sleep(2)
 
+    #找回密码
+    def find(self,phone):
+        self.find_element(*self.phone_loc).send_keys(phone)
+        self.find_element(*self.verifybtn_loc).click()
+        time.sleep(4)
+        self.find_element(*self.verifytxt_loc).send_keys(find_pwd(phone))
+        time.sleep(3)
+
     #输入手机号
     def phone(self,phone):
         self.find_element(*self.phone_loc).send_keys(phone)
@@ -37,7 +45,12 @@ class Forgetpwd(BasePages):
 
     #输入验证码
     def verifytxt(self,code):
-        self.find_element(*self.verifytxt_loc).send_keys(find_pwd(code))
+        if '@' in code:
+            self.find_element(*self.verifytxt_loc).send_keys(find_pwd(code))
+        elif len(code) == 11:
+            self.find_element(*self.verifytxt_loc).send_keys(find_pwd(code))
+        else:
+            self.find_element(*self.verifytxt_loc).send_keys(code)
         time.sleep(3)
 
     #输入新密码
@@ -57,7 +70,7 @@ class Forgetpwd(BasePages):
         t1 = "该手机号未注册，无法用于密码找回";t2 = "该邮箱未注册，无法用于密码找回";
         t3 = "手机号/邮箱格式不正确";t4="手机号/邮箱不能为空";t5 = "验证码错误"
         t6 = "验证码应为六位纯数字";t7 = "密码由6-16字母(区分大小写)、数字组成"
-        t8 = "两次输入的密码不一致";t9 = "手机号/邮箱不能为空"
+        t8 = "两次输入的密码不一致";t9 = "手机号/邮箱不能为空";t10 = '新密码或确认密码不能为空'
         tip = self.find_element(*self.forgettip_loc).text
 
         if tip == t1:
@@ -76,8 +89,10 @@ class Forgetpwd(BasePages):
             assert t7 in tip
         elif tip == t8:
             assert t8 in tip
-        else:
+        elif tip == t9:
             assert t9 in tip
+        else:
+            assert t10 in tip
 
     def screen(self,name):
         test_method_name = name

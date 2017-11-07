@@ -18,6 +18,7 @@ def postphone(phone):
     phone = requests.post(url,json=payload,headers=headers,verify = False)
     return phone
 print(postphone("13217665001").content)
+print(postphone("15812487685").content)
 
 def postemail(emailnum):
     url = 'http://192.168.2.72:5001/api/User/deleteuserbyemail'
@@ -36,5 +37,4 @@ def postemail(emailnum):
     payload = {"email":emailnum}
     email = requests.post(url,json=payload,headers=headers,verify = False)
     return email
-print(postemail("944921374@qq.com").content)
-print(postemail("648604875@qq.com").content)
+

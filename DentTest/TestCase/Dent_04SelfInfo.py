@@ -3,6 +3,10 @@ from Pages.SelfInfo import SelfInfo
 from BasePages.Selenium2 import browser
 from BasePages.BasePage import login_url
 from selenium import webdriver
+from UseData.Open_Url import *
+from UseData.PhoneEmail import *
+from UseData.Password import *
+from UseData.Txt import *
 from HTMLTestRunner import HTMLTestRunner
 
 class SelfCase(unittest.TestCase):
@@ -12,31 +16,18 @@ class SelfCase(unittest.TestCase):
     def setUpClass(cls):
         cls.driver = browser()
         # cls.driver.implicitly_wait(5)
-        cls.url = "http://test.dent-lab.com/login.html"
-        cls.user = "15816038158"
-        cls.phone ="18814128583"
-        cls.name1 = "中国恒大"
-        cls.name2 = "a"
-        cls.name3 = "zhongguo广州恒大拿到7冠的时候，我才发现，我追恒大已经第8年了"
+        cls.url = LoginUrl()
+        cls.title = Title()
         cls.image1 = "test1"
         cls.image2 = "test2"
         cls.image3 = "test3"
-        cls.psw = "a123456"
-        cls.epsw = "12345"
-        cls.email = "648604875@qq.com"
-        cls.regemail = "944921374@qq.com"
-        cls.error_email = "123456qq.com"
-        cls.everify_code = "123455"
-        cls.everify_code2 = "12344"
-        cls.title = "德雅医疗-Dent Lab"
-
 
     def login(self):
         # 声明LoginPage对象
         login_page = SelfInfo(self.driver, self.url, self.title)
         # 调用打开页面组件
         login_page.open()
-        login_page.Login(self.user,self.psw)
+        login_page.Login(LoginPhone(),Pwd())
         time.sleep(3)
         return login_page
 
@@ -45,7 +36,7 @@ class SelfCase(unittest.TestCase):
         login_page = SelfInfo(self.driver, self.url, self.title)
         # 调用打开页面组件
         login_page.open()
-        login_page.Login(self.regemail,self.psw)
+        login_page.Login(LoginEmail(),Pwd())
         time.sleep(3)
         return login_page
 
@@ -54,7 +45,7 @@ class SelfCase(unittest.TestCase):
         user_page = self.login()
         user_page.Edit()
         user_page.edituploadfile(self.image1)
-        user_page.editselfname(self.name1)
+        user_page.editselfname(Length_4())
         user_page.editselfsex()
         user_page.editselfbirY()
         user_page.editselfbirM()
@@ -81,7 +72,7 @@ class SelfCase(unittest.TestCase):
         """编辑个人信息用户名大于16字符"""
         user_page = self.login()
         user_page.Edit()
-        user_page.editselfname(self.name3)
+        user_page.editselfname(Length_17())
         time.sleep(2)
         user_page.screen(self._testMethodDoc)
         user_page.saveself()
@@ -90,7 +81,7 @@ class SelfCase(unittest.TestCase):
         """编辑个人信息用户名少于两字符"""
         user_page = self.login()
         user_page.Edit()
-        user_page.editselfname(self.name2)
+        user_page.editselfname(Length_1())
         time.sleep(2)
         user_page.saveself()
         user_page.error_user()
@@ -108,7 +99,7 @@ class SelfCase(unittest.TestCase):
         """修改密码新密码为空"""
         user_page = self.login()
         user_page.AlertPsw()
-        user_page.psw(self.psw)
+        user_page.psw(Pwd())
         user_page.savepsw()
         user_page.error_psw()
         user_page.screen(self._testMethodDoc)
@@ -117,8 +108,8 @@ class SelfCase(unittest.TestCase):
         """修改密码确认新密码为空"""
         user_page = self.login()
         user_page.AlertPsw()
-        user_page.psw(self.psw)
-        user_page.newpsw(self.psw)
+        user_page.psw(Pwd())
+        user_page.newpsw(Pwd())
         user_page.savepsw()
         user_page.error_psw()
         user_page.screen(self._testMethodDoc)
@@ -127,9 +118,9 @@ class SelfCase(unittest.TestCase):
         """修改密码原密码错误"""
         user_page = self.login()
         user_page.AlertPsw()
-        user_page.psw(self.epsw)
-        user_page.newpsw(self.psw)
-        user_page.renewpsw(self.psw)
+        user_page.psw(ErrorPwd())
+        user_page.newpsw(Pwd())
+        user_page.renewpsw(Pwd())
         user_page.savepsw()
         time.sleep(3)
         user_page.error_psw()
@@ -139,9 +130,9 @@ class SelfCase(unittest.TestCase):
         """修改密码新密码格式错误"""
         user_page = self.login()
         user_page.AlertPsw()
-        user_page.psw(self.psw)
-        user_page.newpsw(self.epsw)
-        user_page.renewpsw(self.epsw)
+        user_page.psw(Pwd())
+        user_page.newpsw(ErrorPwd())
+        user_page.renewpsw(ErrorPwd())
         user_page.savepsw()
         user_page.error_psw()
         user_page.screen(self._testMethodDoc)
@@ -150,9 +141,9 @@ class SelfCase(unittest.TestCase):
         """修改密码密码不一致"""
         user_page = self.login()
         user_page.AlertPsw()
-        user_page.psw(self.psw)
-        user_page.newpsw(self.psw)
-        user_page.renewpsw(self.epsw)
+        user_page.psw(Pwd())
+        user_page.newpsw(Pwd())
+        user_page.renewpsw(ErrorPwd())
         user_page.savepsw()
         user_page.error_psw()
         user_page.screen(self._testMethodDoc)
@@ -161,9 +152,9 @@ class SelfCase(unittest.TestCase):
         """修改密码成功"""
         user_page = self.login()
         user_page.AlertPsw()
-        user_page.psw(self.psw)
-        user_page.newpsw(self.psw)
-        user_page.renewpsw(self.psw)
+        user_page.psw(Pwd())
+        user_page.newpsw(Pwd())
+        user_page.renewpsw(Pwd())
         user_page.savepsw()
         user_page.screen(self._testMethodDoc)
 
@@ -171,9 +162,7 @@ class SelfCase(unittest.TestCase):
         """绑定邮箱成功"""
         user_page = self.login()
         user_page.BDEmail()
-        user_page.emailtxt(self.email)
-        user_page.emailverifybtn()
-        user_page.emailverifytxt(self.email)
+        user_page.emailuni(RandEmail())
         user_page.emailsave()
         user_page.screen(self._testMethodDoc)
 
@@ -181,7 +170,7 @@ class SelfCase(unittest.TestCase):
         """绑定邮箱邮箱格式错误"""
         user_page = self.login()
         user_page.BDEmail()
-        user_page.emailtxt(self.error_email)
+        user_page.emailtxt(ErrorEmail())
         user_page.emailverifybtn()
         user_page.emailsave()
         user_page.screen(self._testMethodDoc)
@@ -190,7 +179,7 @@ class SelfCase(unittest.TestCase):
         """绑定邮箱邮箱已注册"""
         user_page = self.login()
         user_page.BDEmail()
-        user_page.emailtxt(self.regemail)
+        user_page.emailtxt(LoginEmail())
         user_page.emailverifybtn()
         user_page.emailsave()
         user_page.screen(self._testMethodDoc)
@@ -206,9 +195,9 @@ class SelfCase(unittest.TestCase):
         """绑定邮箱邮箱验证码不足6位"""
         user_page = self.login()
         user_page.BDEmail()
-        user_page.emailtxt(self.email)
+        user_page.emailtxt(RandEmail())
         user_page.emailverifybtn()
-        user_page.emailverifytxt(self.everify_code2)
+        user_page.emailverifytxt(Errorverify_5())
         user_page.emailsave()
         user_page.screen(self._testMethodDoc)
 
@@ -216,9 +205,9 @@ class SelfCase(unittest.TestCase):
         """绑定邮箱邮箱验证码错误"""
         user_page = self.login()
         user_page.BDEmail()
-        user_page.emailtxt(self.email)
+        user_page.emailtxt(RandEmail())
         user_page.emailverifybtn()
-        user_page.emailverifytxt(self.everify_code)
+        user_page.emailverifytxt(Errorverify_6())
         user_page.emailsave()
         user_page.emailtips()
         user_page.screen(self._testMethodDoc)
@@ -236,9 +225,9 @@ class SelfCase(unittest.TestCase):
         """绑定/修改手机验证码错误"""
         user_page = self.login_email()
         user_page.BDPhone()
-        user_page.phone(self.phone)
+        user_page.phone(RandPhone())
         user_page.phonebtn()
-        user_page.phonetxt(self.everify_code)
+        user_page.phonetxt(Errorverify_6())
         user_page.savephone()
         user_page.phonetip()
         user_page.screen(self._testMethodDoc)
@@ -247,8 +236,8 @@ class SelfCase(unittest.TestCase):
         """绑定/修改手机验证码不足6位"""
         user_page = self.login_email()
         user_page.BDPhone()
-        user_page.phone(self.phone)
-        user_page.phonetxt(self.everify_code2)
+        user_page.phone(RandPhone())
+        user_page.phonetxt(Errorverify_5())
         user_page.savephone()
         user_page.phonetip()
         user_page.screen(self._testMethodDoc)
@@ -257,7 +246,7 @@ class SelfCase(unittest.TestCase):
         """绑定/修改手机手机号错误"""
         user_page = self.login_email()
         user_page.BDPhone()
-        user_page.phone(self.everify_code)
+        user_page.phone(ErrorPhone())
         user_page.phonebtn()
         user_page.phonetip()
         user_page.screen(self._testMethodDoc)
@@ -266,7 +255,7 @@ class SelfCase(unittest.TestCase):
         """绑定/修改手机号已经注册"""
         user_page = self.login_email()
         user_page.BDPhone()
-        user_page.phone(self.user)
+        user_page.phone(LoginPhone())
         user_page.phonebtn()
         user_page.phonetip()
         user_page.screen(self._testMethodDoc)
@@ -274,9 +263,11 @@ class SelfCase(unittest.TestCase):
     def test_self24(self):
         """绑定/修改手机成功"""
         user_page =self.login_email()
-        user_page.phone(self.phone)
+        user_page.BDPhone()
+        user_page.phone(RandPhone())
         user_page.phonebtn()
-        user_page.phonetxt(self.phone)
+        time.sleep(4)
+        user_page.phonetxt(RandPhone())
         user_page.savephone()
         user_page.screen(self._testMethodDoc)
 
@@ -294,7 +285,7 @@ class SelfCase(unittest.TestCase):
         user_page = self.login()
         user_page.Good()
         user_page.addaddress()
-        user_page.addname(self.name2)
+        user_page.addname(Length_1())
         user_page.addincrease()
         user_page.addtip()
         user_page.screen(self._testMethodDoc)
@@ -304,7 +295,7 @@ class SelfCase(unittest.TestCase):
         user_page = self.login()
         user_page.Good()
         user_page.addaddress()
-        user_page.addname(self.name1)
+        user_page.addname(Length_4())
         user_page.addincrease()
         user_page.addtip()
         user_page.screen(self._testMethodDoc)
@@ -314,8 +305,8 @@ class SelfCase(unittest.TestCase):
         user_page = self.login()
         user_page.Good()
         user_page.addaddress()
-        user_page.addname(self.name1)
-        user_page.addphone(self.everify_code)
+        user_page.addname(Length_4())
+        user_page.addphone(ErrorPhone())
         user_page.addincrease()
         user_page.addtip()
         user_page.screen(self._testMethodDoc)
@@ -325,8 +316,8 @@ class SelfCase(unittest.TestCase):
         user_page = self.login()
         user_page.Good()
         user_page.addaddress()
-        user_page.addname(self.name1)
-        user_page.addphone(self.phone)
+        user_page.addname(Length_4())
+        user_page.addphone(LoginPhone())
         user_page.addpro()
         user_page.addincrease()
         user_page.addtip()
@@ -337,17 +328,17 @@ class SelfCase(unittest.TestCase):
         user_page = self.login()
         user_page.Good()
         user_page.addaddress()
-        user_page.addname(self.name1)
-        user_page.addphone(self.phone)
+        user_page.addname(Length_4())
+        user_page.addphone(LoginPhone())
         user_page.addpro()
-        user_page.adddetail(self.name3)
+        user_page.adddetail(Length_17())
         user_page.addincrease()
         time.sleep(3)
         user_page.addaddress()
-        user_page.addname(self.name1)
-        user_page.addphone(self.phone)
+        user_page.addname(Length_4())
+        user_page.addphone(LoginPhone())
         user_page.addpro()
-        user_page.adddetail(self.name3)
+        user_page.adddetail(Length_17())
         user_page.addincrease()
         user_page.screen(self._testMethodDoc)
 
@@ -356,7 +347,7 @@ class SelfCase(unittest.TestCase):
         user_page = self.login()
         user_page.Good()
         user_page.editadd()
-        user_page.editname(self._testMethodName)
+        user_page.editname(Length_4())
         user_page.editdefault()
         user_page.editsave()
         user_page.screen(self._testMethodDoc)
@@ -366,7 +357,7 @@ class SelfCase(unittest.TestCase):
         user_page = self.login()
         user_page.Good()
         user_page.editadd()
-        user_page.editphone(self.user)
+        user_page.editphone(RandPhone())
         time.sleep(3)
         user_page.editsave()
         user_page.screen(self._testMethodDoc)
@@ -377,7 +368,7 @@ class SelfCase(unittest.TestCase):
         user_page.Good()
         user_page.editadd()
         user_page.editpro()
-        user_page.editdetail(self.title)
+        user_page.editdetail(Length_17())
         time.sleep(3)
         user_page.editsave()
         user_page.screen(self._testMethodDoc)
@@ -399,15 +390,6 @@ class SelfCase(unittest.TestCase):
         user_page.deleteadd()
         user_page.screen(self._testMethodDoc)
         user_page.subdele()
-
-
-    def test_self36(self):
-        """取消删除地址"""
-        user_page = self.login()
-        user_page.Good()
-        user_page.deleteadd()
-        user_page.screen(self._testMethodDoc)
-        user_page.cancledele()
 
 
     @classmethod

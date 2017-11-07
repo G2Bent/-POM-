@@ -204,6 +204,17 @@ class SelfInfo(BasePages):
     def savepsw(self):
         self.find_element(*self.save_pwd_loc).click()
 
+    #绑定/修改邮箱：输入邮箱，获取验证码
+    def emailuni(self,email):
+        self.find_element(*self.email_loc).send_keys(email)
+        self.find_element(*self.email_btn_loc).click()
+        time.sleep(3)
+        if "@" in email:
+            self.find_element(*self.email_txt_loc).send_keys(BD_code(email))
+            time.sleep(5)
+        else:
+            self.find_element(*self.email_txt_loc).send_keys(email)
+            
     #绑定/修改邮箱：输入邮箱
     def emailtxt(self,email):
         self.find_element(*self.email_loc).send_keys(email)
@@ -265,7 +276,7 @@ class SelfInfo(BasePages):
     # 绑定/修改手机号，错误提示
     def phonetip(self):
         t1 = "手机号格式不正确";t2 = "手机号或验证码不能为空";t3 = "验证码应为六位纯数字"
-        t4 = "验证码错误";t5 = "该手机号已注册"
+        t4 = "验证码错误";t5 = "该手机号已注册";t6 = "手机号不能为空"
         tips = self.find_element(*self.phonetip_loc)
         tip =tips.text
         if tip == t1:
@@ -276,8 +287,10 @@ class SelfInfo(BasePages):
             assert t3 in tip
         elif tip == t4:
             assert t4 in tip
-        else:
+        elif tip == t5:
             assert t5 in tip
+        else:
+            assert t6 in tip
 
     #添加收货地址:点击添加收货地址
     def addaddress(self):
@@ -332,7 +345,7 @@ class SelfInfo(BasePages):
     #编辑收货地址:编辑收货地址
     def editadd(self):
         i = random.randint(1,2)
-        self.find_elements(*self.editadd_loc)[i].click()
+        self.find_element(*self.editadd_loc).click()
 
     # 编辑收货地址:输入用户名
     def editname(self,name):
