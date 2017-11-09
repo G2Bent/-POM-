@@ -74,6 +74,7 @@ class RegisterCase(unittest.TestCase):
         reg_page.input_password(Pwd())
         reg_page.input_repassword(Pwd())
         reg_page.click_submit()
+        time.sleep(2)
         assert "验证码错误" in reg_page.show_tips()
 
     def test_reg7(self):
