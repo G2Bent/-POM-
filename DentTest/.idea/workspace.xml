@@ -44,7 +44,7 @@
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_04SelfInfo_SelfCase_test_self11.coverage" NAME="Unittests for Dent_04SelfInfo.SelfCase.test_self11 Coverage Results" MODIFIED="1510024113628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Dent_02LoginCase.coverage" NAME="Dent_02LoginCase Coverage Results" MODIFIED="1508570952309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_test_SelfCase_test_self1.coverage" NAME="Unittests for test.SelfCase.test_self1 Coverage Results" MODIFIED="1509701062333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
-    <SUITE FILE_PATH="coverage/DentTest$index.coverage" NAME="index Coverage Results" MODIFIED="1510032563866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DentTest$index.coverage" NAME="index Coverage Results" MODIFIED="1510216117861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_04SelfInfo_SelfCase_test_self35.coverage" NAME="Unittests for Dent_04SelfInfo.SelfCase.test_self35 Coverage Results" MODIFIED="1509005822067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Unittests_for_Dent_01RegisterCase_RegisterCase_test_reg0.coverage" NAME="Unittests for Dent_01RegisterCase.RegisterCase.test_reg0 Coverage Results" MODIFIED="1510129544469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/DentTest$Dent_03logout.coverage" NAME="Dent_03logout Coverage Results" MODIFIED="1508571804972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
@@ -91,8 +91,8 @@
       <file leaf-file-name="Dent_01RegisterCase.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/Dent_01RegisterCase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3220">
-              <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -103,8 +103,8 @@
       <file leaf-file-name="result.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/report/result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-560">
-              <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,7 +123,7 @@
       <file leaf-file-name="Dent_03logout.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/Dent_03logout.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
+            <state relative-caret-position="196">
               <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -135,7 +135,7 @@
       <file leaf-file-name="Dent_04SelfInfo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/Dent_04SelfInfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
+            <state relative-caret-position="-728">
               <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
@@ -148,7 +148,7 @@
       <file leaf-file-name="Dent_05ForgotPassword.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/Dent_05ForgotPassword.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1273">
+            <state relative-caret-position="2996">
               <caret line="116" column="26" lean-forward="true" selection-start-line="116" selection-start-column="26" selection-end-line="116" selection-end-column="26" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
@@ -167,7 +167,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Open_Url.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Open_Url.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UseData/Open_Url.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
@@ -177,11 +177,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Password.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UseData/Password.py">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestCase/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="28">
+              <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -241,11 +251,9 @@
         <option value="$PROJECT_DIR$/API/case/02post.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/BasePages/BasePage.py" />
-        <option value="$PROJECT_DIR$/TestCase/test.py" />
         <option value="$PROJECT_DIR$/Common/Login.py" />
         <option value="$PROJECT_DIR$/report/result.html" />
         <option value="$PROJECT_DIR$/Pages/LoginPage.py" />
-        <option value="$PROJECT_DIR$/index.py" />
         <option value="$PROJECT_DIR$/TestCase/__init__.py" />
         <option value="$PROJECT_DIR$/Pages/RandNum.py" />
         <option value="$PROJECT_DIR$/UseData/UseNum.py" />
@@ -263,6 +271,8 @@
         <option value="$PROJECT_DIR$/TestCase/Dent_01RegisterCase.py" />
         <option value="$PROJECT_DIR$/TestCase/Dent_04SelfInfo.py" />
         <option value="$PROJECT_DIR$/TestCase/Dent_05ForgotPassword.py" />
+        <option value="$PROJECT_DIR$/index.py" />
+        <option value="$PROJECT_DIR$/TestCase/test.py" />
       </list>
     </option>
   </component>
@@ -273,8 +283,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="60" />
-    <option name="y" value="36" />
+    <option name="x" value="30" />
+    <option name="y" value="52" />
     <option name="width" value="1632" />
     <option name="height" value="1056" />
   </component>
@@ -293,7 +303,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -449,27 +458,28 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/任务文档/学习文档/Learn/openpyexcel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="SearchEverywhereHistoryKey" value="dr&#9;FILE&#9;file://E:/德雅项目文档/测试脚本/-POM-/DentTest/TestCase/Dent_01RegisterCase.py" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\德雅项目文档\测试脚本\-POM-\DentTest\report\css" />
-      <recent name="E:\德雅项目文档\测试脚本\-POM-\DentTest\Autolt" />
-      <recent name="E:\德雅项目文档\测试脚本\-POM-\DentTest\API\config" />
-      <recent name="E:\德雅项目文档\测试脚本\-POM-\DentTest\API\common" />
-      <recent name="E:\德雅项目文档\测试脚本\-POM-\DentTest\API\case" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\德雅项目文档\测试脚本\-POM-\DentTest\config" />
       <recent name="E:\德雅项目文档\测试脚本\DentTest\Common" />
       <recent name="E:\德雅项目文档\测试脚本\DentTest\BasePages" />
       <recent name="E:\德雅项目文档\测试脚本\DentTest\BasePage" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\德雅项目文档\测试脚本\-POM-\DentTest\Autolt" />
+      <recent name="E:\德雅项目文档\测试脚本\-POM-\DentTest\TestCase" />
+      <recent name="E:\德雅项目文档\测试脚本\-POM-\DentTest\report\css" />
+      <recent name="E:\德雅项目文档\测试脚本\-POM-\DentTest\API\config" />
+      <recent name="E:\德雅项目文档\测试脚本\-POM-\DentTest\API\common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -484,23 +494,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.2017-11-09 13_28_35_result.html">
-    <configuration default="false" name="Unittests for Dent_05ForgotPassword.LoginCase.test_forget7" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestCase" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DentTest" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Dent_05ForgotPassword.LoginCase.test_forget7&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.index">
     <configuration default="false" name="Unittests for Dent_01RegisterCase.RegisterCase.test_reg0" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -553,6 +547,25 @@
       <method />
     </configuration>
     <configuration default="false" name="2017-11-09 13_28_35_result.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/DentTest/report/2017-11-09 13_28_35_result.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DentTest" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/index.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -704,19 +717,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_05ForgotPassword.LoginCase.test_forget7" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_01RegisterCase.RegisterCase.test_reg0" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_01RegisterCase.RegisterCase.test_reg6" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Dent_05ForgotPassword" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.2017-11-09 13_28_35_result.html" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_01RegisterCase.RegisterCase.test_reg0" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_01RegisterCase.RegisterCase.test_reg6" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Dent_05ForgotPassword" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.2017-11-09 13_28_35_result.html" />
+      <item index="4" class="java.lang.String" itemvalue="Python.index" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.2017-11-09 13_28_35_result.html" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Dent_05ForgotPassword" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_01RegisterCase.RegisterCase.test_reg0" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_01RegisterCase.RegisterCase.test_reg6" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_05ForgotPassword.LoginCase.test_forget7" />
+        <item index="0" class="java.lang.String" itemvalue="Python.index" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.2017-11-09 13_28_35_result.html" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Dent_05ForgotPassword" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_01RegisterCase.RegisterCase.test_reg0" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for Dent_01RegisterCase.RegisterCase.test_reg6" />
       </list>
     </recent_temporary>
   </component>
@@ -769,20 +782,19 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="36" width="1632" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="30" y="52" width="1632" height="1056" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20482673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20482673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32555673" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32555673" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993576" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -847,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -917,27 +928,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="54" column="47" lean-forward="false" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pages/RegisterPage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -945,7 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -969,7 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2436">
           <caret line="91" column="23" lean-forward="false" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,33 +1009,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/css/bootstrap-theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/report/css/bootstrap-theme.css" />
     <entry file="file://$PROJECT_DIR$/report/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/report/result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-560">
-          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/Dent_03logout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
+        <state relative-caret-position="196">
           <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -1051,20 +1035,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/Dent_04SelfInfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#11364#11392#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/Dent_05ForgotPassword.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
+        <state relative-caret-position="2996">
           <caret line="116" column="26" lean-forward="true" selection-start-line="116" selection-start-column="26" selection-end-line="116" selection-end-column="26" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
@@ -1074,8 +1047,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/Dent_01RegisterCase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3220">
-          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -1086,6 +1059,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/Dent_04SelfInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-728">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#11364#11392#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
           <folding />
         </state>
       </provider>
