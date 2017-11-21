@@ -196,9 +196,9 @@
         
     <div class='page-header'>
         <h1>德雅测试报告</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2017-11-09 16:28:37</p>
-<p class='attribute'><strong>运行时长:</strong> 0:01:16.895557</p>
-<p class='attribute'><strong>状态:</strong> 通过 2 错误 1</p>
+    <p class='attribute'><strong>开始时间:</strong> 2017-11-21 11:04:35</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:30.529039</p>
+<p class='attribute'><strong>状态:</strong> 通过 1</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>测试用例执行情况</p></div>
@@ -229,56 +229,26 @@
             <td>查看</td>
         </tr>
         
-    <tr class='errorClass'>
+    <tr class='passClass'>
         <td>test.SelfCase: 个人中心</td>
-        <td>3</td>
-        <td>2</td>
-        <td>0</td>
         <td>1</td>
-        <td><a href="javascript:showClassDetail('c1',3)">详情</a></td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c1',1)">详情</a></td>
     </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self1: 编辑个人信息成功</div></td>
+    <td class='none'><div class='testcase'>test_self3: 编辑个人信息上传头像格式不正确</div></td>
     <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self2: 编辑个人信息上传头像不能超过2M</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='ft1.3' class='none'>
-    <td class='errorCase'><div class='testcase'>test_self3: 编辑个人信息上传头像格式不正确</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
-        错误</a>
-
-    <div id='div_ft1.3' class="popup_window">
-        <pre>
-        ft1.3: 页面元素未能找到&lt;Pages.SelfInfo.SelfInfo object at 0x000001BD7447E978&gt; ('xpath', '//*[@id="btn_save"]')
-Traceback (most recent call last):
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\TestCase\test.py", line 76, in test_self3
-    user_page.saveself()
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\Pages\SelfInfo.py", line 159, in saveself
-    self.find_element(*self.save_loc).click()
-AttributeError: 'NoneType' object has no attribute 'click'
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
 </tr>
 
         <tr id='total_row'>
             <td>总计</td>
-            <td>3</td>
-            <td>2</td>
-            <td>0</td>
             <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
             <td>&nbsp;</td>
         </tr>
     </table>
@@ -311,9 +281,9 @@ AttributeError: 'NoneType' object has no attribute 'click'
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:2, name:'通过'},
+                        {value:1, name:'通过'},
                         {value:0, name:'失败'},
-                        {value:1, name:'错误'}
+                        {value:0, name:'错误'}
                     ],
                     itemStyle: {
                         emphasis: {

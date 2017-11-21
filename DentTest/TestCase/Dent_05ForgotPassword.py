@@ -40,6 +40,7 @@ class LoginCase(unittest.TestCase):
         forget_page.newpwd(Pwd())
         forget_page.renewpwd(Pwd())
         forget_page.submitbtn()
+        self.file(self._testMethodDoc)
 
     def test_forget1(self):
         """输入未注册手机号"""
@@ -109,7 +110,7 @@ class LoginCase(unittest.TestCase):
     def tearDownClass(cls):
         driver = cls.driver
         now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
-        img_path = r'..\image\手机登录\\' + now + '.png'
+        img_path = r'..\image\忘记密码\\' + now + '.png'
         driver.save_screenshot(img_path)
         time.sleep(2)
         driver.quit()

@@ -334,12 +334,6 @@ class SelfCase(unittest.TestCase):
         user_page.adddetail(Length_17())
         user_page.addincrease()
         time.sleep(3)
-        user_page.addaddress()
-        user_page.addname(Length_4())
-        user_page.addphone(LoginPhone())
-        user_page.addpro()
-        user_page.adddetail(Length_17())
-        user_page.addincrease()
         user_page.screen(self._testMethodDoc)
 
     def test_self31(self):

@@ -65,6 +65,8 @@ class RegisterPage(BasePages):
 
     #用户名或者密码不合理tip框内容提示
     def show_tips(self):
+        t1="两次输入的密码不一致";t2="手机号/邮箱格式不正确";
+        t3= "密码由6-16字母(区分大小写)、数字组成"
         return self.find_element(*self.tips_loc).text
 
     #个人中心，注册成功校验
