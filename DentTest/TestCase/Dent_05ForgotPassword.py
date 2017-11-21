@@ -40,7 +40,6 @@ class LoginCase(unittest.TestCase):
         forget_page.newpwd(Pwd())
         forget_page.renewpwd(Pwd())
         forget_page.submitbtn()
-        self.file(self._testMethodDoc)
 
     def test_forget1(self):
         """输入未注册手机号"""
