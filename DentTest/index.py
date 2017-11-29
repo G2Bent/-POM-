@@ -1,5 +1,5 @@
 import os,unittest,time
-from report.Runner import HTMLTestRunner
+from HTMLTestRunner import HTMLTestRunner
 import sys
 def create_suite():
     TestSuite = unittest.TestSuite()#测试集
@@ -27,7 +27,7 @@ def report():
     return report_name
 
 fp = open(report(),'wb')
-Runner = HTMLTestRunner.HTMLTestRunner(
+Runner = HTMLTestRunner(
         stream=fp,
         title='德雅WEB官网测试报告',
         description='测试用例执行情况'
