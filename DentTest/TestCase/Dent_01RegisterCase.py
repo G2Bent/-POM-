@@ -22,8 +22,8 @@ class RegisterCase(unittest.TestCase):
         return reg_page
 
     def test_reg0(self):
-        dele = post.postphone(RegPhone())
-        dele2 = post.postphone(RandPhone())
+        dele = post.delephone(RegPhone())
+        dele2 = post.delephone(RandPhone())
         print(dele,dele2)
 
     def test_reg1(self):
