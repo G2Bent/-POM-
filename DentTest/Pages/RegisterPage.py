@@ -73,3 +73,19 @@ class RegisterPage(BasePages):
     # def show_(self):
     #     return self.find_element(*self.re_loc).text
 
+    def tip_show(self):
+        t1 = '两次输入的密码不一致';t2 = '手机号/邮箱格式不正确'
+        t3 = '密码由6-16字母(区分大小写)、数字组成';t4 = '手机号/邮箱不能为空'
+        t5 = '验证码错误'
+        tip = self.find_element(*self.tips_loc).text
+        if tip == t1:
+            assert t1 in tip
+        elif tip == t2:
+            assert t2 in tip
+        elif tip == t3:
+            assert t3 in tip
+        elif tip == t4:
+            assert t4 in tip
+        else:
+            assert t5 in tip
+

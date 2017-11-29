@@ -1,18 +1,19 @@
 import requests
 
 def postphone(phone):
-    url = 'http://192.168.2.72:5001/api/User/deleteuser'
+    url = 'http://112.74.29.84/api/User/deleteuser'
     headers={
         "User-Agent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36",
-        "Referer":"http://192.168.2.72:5001/swagger/",
-        "Origin":"http://192.168.2.72:5001",
-        "Host":"192.168.2.72:5001",
+        "Referer":"http://112.74.29.84:23301/swagger/",
+        "Origin":"http://112.74.29.84:23301",
+        "Host":"112.74.29.84",
         "Content-Type":"application/json-patch+json",
         "Content-Length":"28",
         "Connection":"keep-alive",
+        "Access-Control-Request-Headers":"content-type",
         "Accept-Language":"zh-CN,zh;q=0.8",
         "Accept-Encoding":"gzip, deflate",
-        "Accept":"application/json",
+        "Accept":"*/*",
     }
     payload = {"phone":phone}
     phone = requests.post(url,json=payload,headers=headers,verify = False)
@@ -21,7 +22,7 @@ print(postphone("13217665001").content)
 print(postphone("15812487685").content)
 
 def postemail(emailnum):
-    url = 'http://192.168.2.72:5001/api/User/deleteuserbyemail'
+    url = 'http://112.74.29.84:23301/api/User/deleteuserbyemail'
     headers={
         "User-Agent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36",
         "Referer":"http://192.168.2.72:5001/swagger/",

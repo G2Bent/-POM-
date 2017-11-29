@@ -30,26 +30,24 @@ class RegisterCase(unittest.TestCase):
         """两次输入的密码不一致"""
         reg_page = self.open_dent()
         reg_page.input_name(RandEmail())
-        # reg_page.click_verify()
-        # reg_page.input_verify(PhoneEmail.RandEmail())
         reg_page.input_password(Pwd())
         reg_page.input_repassword(ErrorPwd())
         reg_page.click_submit()
-        assert "两次输入的密码不一致" in reg_page.show_tips()
+        reg_page.tip_show()
 
     def test_reg2(self):
         """邮箱格式不正确"""
         reg_page = self.open_dent()
         reg_page.input_username(ErrorEmail())
         reg_page.click_verify()
-        assert "手机号/邮箱格式不正确" in reg_page.show_tips()
+        reg_page.tip_show()
 
     def test_reg3(self):
         """手机号格式不正确"""
         reg_page = self.open_dent()
         reg_page.input_username(ErrorPhone())
         reg_page.click_verify()
-        assert "手机号/邮箱格式不正确" in reg_page.show_tips()
+        reg_page.tip_show()
 
     def test_reg4(self):
         """测试密码错误"""
@@ -58,13 +56,13 @@ class RegisterCase(unittest.TestCase):
         reg_page.input_password(ErrorPwd())
         reg_page.input_repassword(ErrorPwd())
         reg_page.click_submit()
-        assert "密码由6-16字母(区分大小写)、数字组成" in reg_page.show_tips()
+        reg_page.tip_show()
 
     def test_reg5(self):
         """账号密码为空"""
         reg_page = self.open_dent()
         reg_page.click_submit()
-        assert "手机号/邮箱不能为空" in reg_page.show_tips()
+        reg_page.tip_show()
 
     def test_reg6(self):
         """验证码错误"""
@@ -74,8 +72,9 @@ class RegisterCase(unittest.TestCase):
         reg_page.input_password(Pwd())
         reg_page.input_repassword(Pwd())
         reg_page.click_submit()
+        reg_page.tip_show()
         time.sleep(2)
-        assert "验证码错误" in reg_page.show_tips()
+
 
     def test_reg7(self):
         """手机注册成功"""
