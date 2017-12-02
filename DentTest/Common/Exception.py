@@ -17,3 +17,11 @@ class MobileCodeNoeException(Exception):
 class Error(Exception):
     def __init__(self,err='不存在的'):
         Exception.__init__(self,err)
+
+class DeleteUserException(Exception):
+    def __init__(self,err='删除成功！该账号已删除'):
+        Exception.__init__(self,err)
+
+class DeleteUserExceptionFail(Exception):
+    def __init__(self,err='删除失败！该账号没有删除成功'):
+        Exception.__init__(self,err)

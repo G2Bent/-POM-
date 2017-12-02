@@ -27,7 +27,7 @@ class SelfCase(unittest.TestCase):
         login_page = SelfInfo(self.driver, self.url, self.title)
         # 调用打开页面组件
         login_page.open()
-        login_page.Login(LoginPhone(),Pwd())
+        login_page.Login(LoginPhone(), Pwd())
         time.sleep(3)
         return login_page
 
@@ -36,7 +36,7 @@ class SelfCase(unittest.TestCase):
         login_page = SelfInfo(self.driver, self.url, self.title)
         # 调用打开页面组件
         login_page.open()
-        login_page.Login(LoginEmail(),Pwd())
+        login_page.Login(LoginEmail(), Pwd())
         time.sleep(3)
         return login_page
 
@@ -45,7 +45,7 @@ class SelfCase(unittest.TestCase):
         user_page = self.login()
         user_page.Edit()
         user_page.edituploadfile(self.image1)
-        user_page.editselfname(Length_4())
+        # user_page.editselfname(Length_4())
         user_page.editselfsex()
         user_page.editselfbirY()
         user_page.editselfbirM()
@@ -68,24 +68,24 @@ class SelfCase(unittest.TestCase):
         time.sleep(2)
         user_page.saveself()
 
-    def test_self4(self):
-        """编辑个人信息用户名大于16字符"""
-        user_page = self.login()
-        user_page.Edit()
-        user_page.editselfname(Length_17())
-        time.sleep(2)
-        user_page.screen(self._testMethodDoc)
-        user_page.saveself()
+    # def test_self4(self):
+    #     """编辑个人信息用户名大于16字符"""
+    #     user_page = self.login()
+    #     user_page.Edit()
+    #     # user_page.editselfname(Length_17())
+    #     time.sleep(2)
+    #     user_page.screen(self._testMethodDoc)
+    #     user_page.saveself()
 
-    def test_self5(self):
-        """编辑个人信息用户名少于两字符"""
-        user_page = self.login()
-        user_page.Edit()
-        user_page.editselfname(Length_1())
-        time.sleep(2)
-        user_page.saveself()
-        user_page.error_user()
-        user_page.screen(self._testMethodDoc)
+    # def test_self5(self):
+    #     """编辑个人信息用户名少于两字符"""
+    #     user_page = self.login()
+    #     user_page.Edit()
+    #     # user_page.editselfname(Length_1())
+    #     time.sleep(2)
+    #     user_page.saveself()
+    #     user_page.error_user()
+    #     user_page.screen(self._testMethodDoc)
 
     def test_self6(self):
         """修改密码原密码为空"""
@@ -277,6 +277,7 @@ class SelfCase(unittest.TestCase):
         user_page.Good()
         user_page.addaddress()
         user_page.addincrease()
+        time.sleep(2)
         user_page.addtip()
         user_page.screen(self._testMethodDoc)
 

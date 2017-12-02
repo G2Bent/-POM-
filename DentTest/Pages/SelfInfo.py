@@ -5,6 +5,7 @@ from selenium.webdriver.common.action_chains import *
 import os,time,random
 from Common.Data import *
 from selenium.webdriver.common.keys import Keys
+from Pages.Errortip import error
 
 class SelfInfo(BasePages):
     """个人中心页面 """
@@ -17,7 +18,7 @@ class SelfInfo(BasePages):
 
     ''''个人信息页面'''
     edituploadfile_loc = (By.XPATH,'//*[@id="selectfiles"]')#上传按钮
-    editName_loc = (By.XPATH,'//*[@id="text-uname"]')#昵称
+    # editName_loc = (By.XPATH,'//*[@id="text-uname"]')#昵称
     editSex_loc = (By.XPATH,'//*[@id="radio_male"]')#性别选择男
     editBir_year_loc = (By.XPATH,'//*[@class="sel_year"]/option[3]')#选择年
     editBir_mon_loc = (By.XPATH,'//*[@class="sel_month"]/option[5]')#选择月
@@ -134,9 +135,9 @@ class SelfInfo(BasePages):
 
 
     #个人信息：用户名
-    def editselfname(self,name):
-        self.find_element(*self.editName_loc).clear()
-        self.find_element(*self.editName_loc).send_keys(name)
+    # def editselfname(self,name):
+    #     self.find_element(*self.editName_loc).clear()
+    #     self.find_element(*self.editName_loc).send_keys(name)
 
     #个人信息：性别
     def editselfsex(self):
@@ -160,29 +161,31 @@ class SelfInfo(BasePages):
         self.find_element(*self.save_loc).click()
 
     #个人信息：错误提示
-    def error_user(self):
-        tips = self.find_element(*self.error_loc)
-        assert "昵称由2-16位汉字、字母、数字组成" in tips.text
+    # def error_user(self):
+    #     tips = self.find_element(*self.error_loc)
+    #     assert "昵称由2-16位汉字、字母、数字组成" in tips.text
 
     #修改密码：错误提示
     def error_psw(self):
-        t1 ="旧密码不能为空";t2 = '新密码不能为空';t3 = '确认新密码不能为空'
-        t4 = '旧密码不正确';t5 = '密码由6-16字母(区分大小写)、数字组成'
-        t6 = '新密码和确认密码不一致'
+        # t1 ="旧密码不能为空";t2 = '新密码不能为空';t3 = '确认新密码不能为空'
+        # t4 = '旧密码不正确';t5 = '密码由6-16字母(区分大小写)、数字组成'
+        # t6 = '新密码和确认密码不一致'
         tips = self.find_element(*self.alerpsw_loc)
         tip = tips.text
-        if tip == t1:
-            assert t1 in tip
-        elif tip == t2:
-            assert t2 in tip
-        elif tip == t3:
-            assert t3 in tip
-        elif tip == t4:
-            assert t4 in tip
-        elif tip == t5:
-            assert t5 in tip
-        else:
-            assert t6 in tip
+        if tip == error():
+            assert error() in tip
+        # if tip == t1:
+        #     assert t1 in tip
+        # elif tip == t2:
+        #     assert t2 in tip
+        # elif tip == t3:
+        #     assert t3 in tip
+        # elif tip == t4:
+        #     assert t4 in tip
+        # elif tip == t5:
+        #     assert t5 in tip
+        # else:
+        #     assert t6 in tip
 
     #结果截图
     def screen(self,name):
@@ -239,20 +242,22 @@ class SelfInfo(BasePages):
 
     #绑定/修改邮箱：错误提示
     def emailtips(self):
-        t1 ="邮箱或验证码不能为空";t2 = "邮箱格式不正确";t3 = "验证码错误"
-        t4 = "验证码应为六位纯数字";t5 = "该邮箱已注册"
+        # t1 ="邮箱或验证码不能为空";t2 = "邮箱格式不正确";t3 = "验证码错误"
+        # t4 = "验证码应为六位纯数字";t5 = "该邮箱已注册"
         tips = self.find_element(*self.bdemail_loc)
         tip = tips.text
-        if tip == t1:
-            assert t1 in tip
-        elif tip == t2:
-            assert t2 in tip
-        elif tip == t3:
-            assert t3 in tip
-        elif tip ==t4:
-            assert t4 in tip
-        else:
-            assert t5 in tip
+        if tip == error():
+            assert error() in tip
+        # if tip == t1:
+        #     assert t1 in tip
+        # elif tip == t2:
+        #     assert t2 in tip
+        # elif tip == t3:
+        #     assert t3 in tip
+        # elif tip ==t4:
+        #     assert t4 in tip
+        # else:
+        #     assert t5 in tip
 
     #绑定/修改手机号：输入手机号
     def phone(self,phone):
@@ -276,22 +281,24 @@ class SelfInfo(BasePages):
 
     # 绑定/修改手机号，错误提示
     def phonetip(self):
-        t1 = "手机号格式不正确";t2 = "手机号或验证码不能为空";t3 = "验证码应为六位纯数字"
-        t4 = "验证码错误";t5 = "该手机号已注册";t6 = "手机号不能为空"
+        # t1 = "手机号格式不正确";t2 = "手机号或验证码不能为空";t3 = "验证码应为六位纯数字"
+        # t4 = "验证码错误";t5 = "该手机号已注册";t6 = "手机号不能为空"
         tips = self.find_element(*self.phonetip_loc)
         tip =tips.text
-        if tip == t1:
-            assert t1 in tip
-        elif tip == t2:
-            assert t2 in tip
-        elif tip == t3:
-            assert t3 in tip
-        elif tip == t4:
-            assert t4 in tip
-        elif tip == t5:
-            assert t5 in tip
-        else:
-            assert t6 in tip
+        if tip == error():
+            assert error() in tip
+        # if tip == t1:
+        #     assert t1 in tip
+        # elif tip == t2:
+        #     assert t2 in tip
+        # elif tip == t3:
+        #     assert t3 in tip
+        # elif tip == t4:
+        #     assert t4 in tip
+        # elif tip == t5:
+        #     assert t5 in tip
+        # else:
+        #     assert t6 in tip
 
     #添加收货地址:点击添加收货地址
     def addaddress(self):
@@ -332,6 +339,12 @@ class SelfInfo(BasePages):
         tip =self.find_element(*self.addnametip_loc).text
         tip1 = self.find_element(*self.addphonetip_loc).text
         tip2 = self.find_element(*self.adddetailtip_loc).text
+        # if tip == error():
+        #     assert error() in tip
+        # elif tip1 == error():
+        #     assert error() in tip1
+        # else :
+        #     assert error() in tip2
         if tip == t1:
             assert t1 in tip
         elif tip == t2:
@@ -381,21 +394,27 @@ class SelfInfo(BasePages):
 
     # 编辑收货地址：错误提示
     def edittip(self):
-        t1 = "姓名不能为空";t2 = "姓名由2-16位汉字、字母、数字组成";t3 = "手机号不能为空"
-        t4 = "手机号格式不正确";t5 = "详细地址不能为空"
+        # t1 = "姓名不能为空";t2 = "姓名由2-16位汉字、字母、数字组成";t3 = "手机号不能为空"
+        # t4 = "手机号格式不正确";t5 = "详细地址不能为空"
         tip = self.find_element(*self.editnametip_loc).text
         tip1 = self.find_element(*self.editphonetip_loc).text
         tip2 = self.find_element(*self.editdetailtip_loc).text
-        if tip == t1:
-            assert t1 in tip
-        elif tip == t2:
-            assert t2 in tip
-        elif tip1 == t3:
-            assert t3 in tip1
-        elif tip1 == t4:
-            assert t4 in tip1
+        if tip == error():
+            assert error() in tip
+        elif tip1 == error():
+            assert error() in tip1
         else:
-            assert t5 in tip2
+            assert error() in tip2
+        # if tip == t1:
+        #     assert t1 in tip
+        # elif tip == t2:
+        #     assert t2 in tip
+        # elif tip1 == t3:
+        #     assert t3 in tip1
+        # elif tip1 == t4:
+        #     assert t4 in tip1
+        # else:
+        #     assert t5 in tip2
 
     # 删除地址
     def deleteadd(self):

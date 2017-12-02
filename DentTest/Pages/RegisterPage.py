@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from BasePages.BasePage import BasePages
 from Common.Data import verify_code
+from Pages.Errortip import error
 import time
 
 class RegisterPage(BasePages):
@@ -64,28 +65,30 @@ class RegisterPage(BasePages):
         self.find_element(*self.loginurl_loc).click()
 
     #用户名或者密码不合理tip框内容提示
-    def show_tips(self):
-        t1="两次输入的密码不一致";t2="手机号/邮箱格式不正确";
-        t3= "密码由6-16字母(区分大小写)、数字组成"
-        return self.find_element(*self.tips_loc).text
+    # def show_tips(self):
+        # t1="两次输入的密码不一致";t2="手机号/邮箱格式不正确";
+        # t3= "密码由6-16字母(区分大小写)、数字组成"
+        # return self.find_element(*self.tips_loc).text
 
     #个人中心，注册成功校验
     # def show_(self):
     #     return self.find_element(*self.re_loc).text
 
     def tip_show(self):
-        t1 = '两次输入的密码不一致';t2 = '手机号/邮箱格式不正确'
-        t3 = '密码由6-16字母(区分大小写)、数字组成';t4 = '手机号/邮箱不能为空'
-        t5 = '验证码错误'
+        # t1 = '两次输入的密码不一致';t2 = '手机号/邮箱格式不正确'
+        # t3 = '密码由6-16字母(区分大小写)、数字组成';t4 = '手机号/邮箱不能为空'
+        # t5 = '验证码错误'
         tip = self.find_element(*self.tips_loc).text
-        if tip == t1:
-            assert t1 in tip
-        elif tip == t2:
-            assert t2 in tip
-        elif tip == t3:
-            assert t3 in tip
-        elif tip == t4:
-            assert t4 in tip
-        else:
-            assert t5 in tip
+        if tip == error():
+            assert error() in tip
+        # if tip == t1:
+        #     assert t1 in tip
+        # elif tip == t2:
+        #     assert t2 in tip
+        # elif tip == t3:
+        #     assert t3 in tip
+        # elif tip == t4:
+        #     assert t4 in tip
+        # else:
+        #     assert t5 in tip
 

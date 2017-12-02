@@ -24,7 +24,8 @@ class RegisterCase(unittest.TestCase):
     def test_reg0(self):
         dele = post.delephone(RegPhone())
         dele2 = post.delephone(RandPhone())
-        print(dele,dele2)
+        dele3 = post.delephone(RegPhone())
+        print(dele,dele2,dele3)
 
     def test_reg1(self):
         """两次输入的密码不一致"""
@@ -91,6 +92,7 @@ class RegisterCase(unittest.TestCase):
         reg_page.input_repassword(Pwd())
         #调用登录组件
         reg_page.click_submit()
+        time.sleep(2)
         #注册成功，文案校验
         # assert "个人中心" in reg_page.show_()
 

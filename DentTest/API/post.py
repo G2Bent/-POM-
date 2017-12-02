@@ -1,5 +1,6 @@
 import requests
 import json
+from Common.Exception import *
 
 def delephone(phone):
     postdata = {'phone':phone}
@@ -8,6 +9,9 @@ def delephone(phone):
     token_str = r.text
     token_dict = json.loads(token_str)
     if token_dict['success'] == True:
-        print("删除成功！")
+        return True
     else:
-        print("删除失败")
+        return False
+
+print(delephone("15812487685"))
+

@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 from BasePages.BasePage import BasePages
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import *
+from Pages.Errortip import error
 
 class LoginPage(BasePages):
     #定位器，通过元素属性定位元素对象

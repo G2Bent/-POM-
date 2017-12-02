@@ -40,7 +40,7 @@ class BasePages(object):
             # 注意：以下入参为元组的元素，需要加*。Python存在这种特性，就是将入参放在元组里。
             # WebDriverWait(self.driver,10).until(lambda driver: driver.find_element(*loc).is_displayed())
             # 注意：以下入参本身是元组，不需要加*
-            WebDriverWait(self.driver,1).until(EC.visibility_of_all_elements_located(loc))
+            WebDriverWait(self.driver,5).until(EC.visibility_of_all_elements_located(loc))
             return  self.driver.find_element(*loc)
         except:
             print("页面元素未能找到%s"%self,loc)
@@ -53,7 +53,7 @@ class BasePages(object):
             # 注意：以下入参为元组的元素，需要加*。Python存在这种特性，就是将入参放在元组里。
             # WebDriverWait(self.driver,10).until(lambda driver: driver.find_element(*loc).is_displayed())
             # 注意：以下入参本身是元组，不需要加*
-            WebDriverWait(self.driver,1).until(EC.visibility_of_all_elements_located(loc))
+            WebDriverWait(self.driver,5).until(EC.visibility_of_all_elements_located(loc))
             return  self.driver.find_elements(*loc)
         except:
             print("页面元素未能找到%s"%self,loc)

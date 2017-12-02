@@ -1,4 +1,5 @@
 import random
+import string
 
 def GB2312():
     head = random.randint(0x4E00, 0x9FA5)

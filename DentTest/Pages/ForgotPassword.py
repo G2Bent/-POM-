@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from BasePages.BasePage import BasePages
 from Common.Data import *
+from Pages.Errortip import error
 import time
 
 class Forgetpwd(BasePages):
@@ -67,32 +68,33 @@ class Forgetpwd(BasePages):
 
     #错误提示
     def tip(self):
-        t1 = "该手机号未注册，无法用于密码找回";t2 = "该邮箱未注册，无法用于密码找回"
-        t3 = "手机号/邮箱格式不正确";t4="手机号/邮箱不能为空";t5 = "验证码错误"
-        t6 = "验证码应为六位纯数字";t7 = "密码由6-16字母(区分大小写)、数字组成"
-        t8 = "两次输入的密码不一致";t9 = "手机号/邮箱不能为空";t10 = '新密码或确认密码不能为空'
+        # t1 = "该手机号未注册，无法用于密码找回";t2 = "该邮箱未注册，无法用于密码找回"
+        # t3 = "手机号/邮箱格式不正确";t4="手机号/邮箱不能为空";t5 = "验证码错误"
+        # t6 = "验证码应为六位纯数字";t7 = "密码由6-16字母(区分大小写)、数字组成"
+        # t8 = "两次输入的密码不一致";t9 = "手机号/邮箱不能为空";t10 = '新密码或确认密码不能为空'
         tip = self.find_element(*self.forgettip_loc).text
-
-        if tip == t1:
-            assert t1 in tip
-        elif tip == t2:
-            assert t2 in tip
-        elif tip == t3:
-            assert t3 in tip
-        elif tip == t4:
-            assert t4 in tip
-        elif tip == t5:
-            assert t5 in tip
-        elif tip == t6:
-            assert t6 in tip
-        elif tip == t7:
-            assert t7 in tip
-        elif tip == t8:
-            assert t8 in tip
-        elif tip == t9:
-            assert t9 in tip
-        else:
-            assert t10 in tip
+        if tip in error():
+            assert error() in tip
+        # if tip == t1:
+        #     assert t1 in tip
+        # elif tip == t2:
+        #     assert t2 in tip
+        # elif tip == t3:
+        #     assert t3 in tip
+        # elif tip == t4:
+        #     assert t4 in tip
+        # elif tip == t5:
+        #     assert t5 in tip
+        # elif tip == t6:
+        #     assert t6 in tip
+        # elif tip == t7:
+        #     assert t7 in tip
+        # elif tip == t8:
+        #     assert t8 in tip
+        # elif tip == t9:
+        #     assert t9 in tip
+        # else:
+        #     assert t10 in tip
 
     def screen(self,name):
         test_method_name = name
