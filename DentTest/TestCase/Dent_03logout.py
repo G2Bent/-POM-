@@ -20,9 +20,9 @@ class LoginOut(unittest.TestCase):
         logout_page.input_username(LoginEmail())
         logout_page.input_password(Pwd())
         logout_page.click_submit()
-        time.sleep(2)
+        time.sleep(3)
         logout_page.logout()
-        time.sleep(2)
+        time.sleep(3)
 
     @classmethod
     def tearDownClass(cls):

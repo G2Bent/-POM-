@@ -67,7 +67,7 @@ class LoginCase(unittest.TestCase):
         """输入错误验证码"""
         forget_page = self.openforget()
         forget_page.phone(LoginEmail())
-        forget_page.verifytxt(Errorverify_6())
+        forget_page.verifytxt(ErrorNum_6())
         forget_page.newpwd(Pwd())
         forget_page.renewpwd(Pwd())
         forget_page.submitbtn()
@@ -78,7 +78,7 @@ class LoginCase(unittest.TestCase):
         """输入不足6位数验证码"""
         forget_page = self.openforget()
         forget_page.phone(LoginEmail())
-        forget_page.verifytxt(Errorverify_5())
+        forget_page.verifytxt(ErrorNum_5())
         forget_page.newpwd(Pwd())
         forget_page.renewpwd(Pwd())
         forget_page.submitbtn()
@@ -90,7 +90,7 @@ class LoginCase(unittest.TestCase):
         forget_page.phone(LoginEmail())
         forget_page.btnverify()
         forget_page.verifytxt(LoginEmail())
-        forget_page.newpwd(ErrorPwd())
+        forget_page.newpwd(ErrorNum_5())
         forget_page.submitbtn()
         self.file(self._testMethodDoc)
 
@@ -101,7 +101,7 @@ class LoginCase(unittest.TestCase):
         forget_page.btnverify()
         forget_page.verifytxt(LoginEmail())
         forget_page.newpwd(Pwd())
-        forget_page.renewpwd(ErrorPwd())
+        forget_page.renewpwd(ErrorNum_5())
         forget_page.submitbtn()
         self.file(self._testMethodDoc)
 

@@ -1,5 +1,10 @@
 import random
 import string
+from openpyxl import load_workbook
+
+
+wb = load_workbook("dent.xlsx")
+sheet = wb.get_sheet_by_name("TXT")
 
 def GB2312():
     head = random.randint(0x4E00, 0x9FA5)
@@ -13,9 +18,9 @@ def Num(num):
 
 #低于两个长度
 def Length_1():
-    name  = ["a","好",'@','1']
+    name  = sheet["A"]
     for i in random.choices(name):
-        return i
+        return i.value
 
 #正确长度
 def Length_4():

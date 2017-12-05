@@ -419,7 +419,7 @@ class SelfInfo(BasePages):
     # 删除地址
     def deleteadd(self):
         i = random.randint(1,3)
-        self.find_elements(*self.delete_loc)[i].click()
+        self.find_elements(*self.delete_loc)[0].click()
 
     #确认删除地址
     def subdele(self):

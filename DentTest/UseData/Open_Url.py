@@ -1,11 +1,18 @@
+from openpyxl import load_workbook
+
+wb = load_workbook("dent.xlsx")
+sheet = wb.get_sheet_by_name("URL")
+
 def RegisterURL():
-    url = "http://test.dent-lab.com/register.html"
-    return url
+    for url in sheet["A"]:
+        return url.value
 
 def LoginUrl():
-    url = "http://test.dent-lab.com/login.html"
-    return url
+    for url in sheet["B"]:
+        return url.value
 
 def Title():
-    title = "德雅医疗-Dent Lab"
-    return title
+    for title in sheet["C"]:
+        return title.value
+
+print(Title())

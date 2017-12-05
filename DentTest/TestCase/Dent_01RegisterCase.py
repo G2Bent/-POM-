@@ -32,7 +32,7 @@ class RegisterCase(unittest.TestCase):
         reg_page = self.open_dent()
         reg_page.input_name(RandEmail())
         reg_page.input_password(Pwd())
-        reg_page.input_repassword(ErrorPwd())
+        reg_page.input_repassword(ErrorNum_5())
         reg_page.click_submit()
         reg_page.tip_show()
 
@@ -54,8 +54,8 @@ class RegisterCase(unittest.TestCase):
         """测试密码错误"""
         reg_page = self.open_dent()
         reg_page.input_name(RandEmail())
-        reg_page.input_password(ErrorPwd())
-        reg_page.input_repassword(ErrorPwd())
+        reg_page.input_password(ErrorNum_5())
+        reg_page.input_repassword(ErrorNum_5())
         reg_page.click_submit()
         reg_page.tip_show()
 
@@ -69,7 +69,7 @@ class RegisterCase(unittest.TestCase):
         """验证码错误"""
         reg_page = self.open_dent()
         reg_page.input_username(RandEmail())
-        reg_page.input_verify("123455")
+        reg_page.input_verify(ErrorNum_6())
         reg_page.input_password(Pwd())
         reg_page.input_repassword(Pwd())
         reg_page.click_submit()
