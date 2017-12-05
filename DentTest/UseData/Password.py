@@ -3,6 +3,7 @@ from openpyxl import load_workbook
 
 wb = load_workbook("dent.xlsx")
 sheet = wb.get_sheet_by_name("Phone")
+
 #正确的密码
 def Pwd():
     pwd = sheet["F"]

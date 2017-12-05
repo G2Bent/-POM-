@@ -49,6 +49,7 @@ class LoginCase(unittest.TestCase):
         login_page.input_username(ErrorPhone())
         login_page.input_password(Pwd())
         login_page.click_submit()
+        time.sleep(2)
         assert "用户名或密码错误" in login_page.show_tips()
 
     def test_login4(self):
@@ -57,6 +58,7 @@ class LoginCase(unittest.TestCase):
         login_page.input_username(LoginPhone())
         login_page.input_password(ErrorNum_5())
         login_page.click_submit()
+        time.sleep(2)
         assert "用户名或密码错误" in login_page.show_tips()
 
     def test_login5(self):
