@@ -8,7 +8,7 @@ def create_suite():
 
     discover = unittest.defaultTestLoader.discover(
         start_dir=test_dir,
-        pattern='Dent_*.py',
+        pattern='Dent_05*.py',
         top_level_dir=None
     )
 

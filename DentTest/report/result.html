@@ -196,9 +196,9 @@
         
     <div class='page-header'>
         <h1>德雅WEB官网测试报告</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2017-12-02 11:58:02</p>
-<p class='attribute'><strong>运行时长:</strong> 0:04:03.767690</p>
-<p class='attribute'><strong>状态:</strong> 通过 27 失败 5 错误 1</p>
+    <p class='attribute'><strong>开始时间:</strong> 2017-12-04 16:35:43</p>
+<p class='attribute'><strong>运行时长:</strong> 0:01:13.796254</p>
+<p class='attribute'><strong>状态:</strong> 通过 8</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>测试用例执行情况</p></div>
@@ -229,300 +229,89 @@
             <td>查看</td>
         </tr>
         
-    <tr class='errorClass'>
-        <td>Dent_04SelfInfo.SelfCase: 个人中心</td>
-        <td>33</td>
-        <td>27</td>
-        <td>5</td>
-        <td>1</td>
-        <td><a href="javascript:showClassDetail('c1',33)">详情</a></td>
+    <tr class='passClass'>
+        <td>Dent_05ForgotPassword.LoginCase: 登录</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c1',8)">详情</a></td>
     </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self1: 编辑个人信息成功</div></td>
+    <td class='none'><div class='testcase'>test_forget1: 输入未注册手机号</div></td>
     <td colspan='5' align='center'>通过</td>
 </tr>
 
 <tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self10: 修改密码新密码格式错误</div></td>
+    <td class='none'><div class='testcase'>test_forget2: 输入错误手机号</div></td>
     <td colspan='5' align='center'>通过</td>
 </tr>
 
 <tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self11: 修改密码密码不一致</div></td>
+    <td class='none'><div class='testcase'>test_forget3: 不做操作</div></td>
     <td colspan='5' align='center'>通过</td>
 </tr>
 
 <tr id='pt1.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self12: 修改密码成功</div></td>
+    <td class='none'><div class='testcase'>test_forget4: 输入错误验证码</div></td>
     <td colspan='5' align='center'>通过</td>
 </tr>
 
 <tr id='pt1.5' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self13: 绑定邮箱成功</div></td>
+    <td class='none'><div class='testcase'>test_forget5: 输入不足6位数验证码</div></td>
     <td colspan='5' align='center'>通过</td>
 </tr>
 
 <tr id='pt1.6' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self14: 绑定邮箱邮箱格式错误</div></td>
-    <td colspan='5' align='center'>通过</td>
+    <td class='none'><div class='testcase'>test_forget6: 输入错误新密码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
+        通过</a>
+
+    <div id='div_pt1.6' class="popup_window">
+        <pre>
+        pt1.6: http://112.74.29.84:23301/api/User/getemailverifycode?token=f34fe47a14954792b2f7e13d3537bc29&amp;email=944921374@qq.com&amp;type=2
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='pt1.7' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self15: 绑定邮箱邮箱已注册</div></td>
-    <td colspan='5' align='center'>通过</td>
+    <td class='none'><div class='testcase'>test_forget7: 输入错误确认新密码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.7')" >
+        通过</a>
+
+    <div id='div_pt1.7' class="popup_window">
+        <pre>
+        pt1.7: http://112.74.29.84:23301/api/User/getemailverifycode?token=45019dc235924969834e2aac136d626c&amp;email=944921374@qq.com&amp;type=2
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='pt1.8' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self16: 绑定邮箱邮箱不能为空</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.9' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self17: 绑定邮箱邮箱验证码不足6位</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.10' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self18: 绑定邮箱邮箱验证码错误</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.11' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self19: 绑定/修改手机号为空</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.12' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self2: 编辑个人信息上传头像不能超过2M</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.13' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self20: 绑定/修改手机验证码错误</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.14' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self21: 绑定/修改手机验证码不足6位</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.15' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self22: 绑定/修改手机手机号错误</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.16' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self23: 绑定/修改手机号已经注册</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.17' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self24: 绑定/修改手机成功</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='ft1.18' class='none'>
-    <td class='failCase'><div class='testcase'>test_self25: 新增收货地址:名字为空</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.18')" >
-        失败</a>
-
-    <div id='div_ft1.18' class="popup_window">
-        <pre>
-        ft1.18: Traceback (most recent call last):
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\TestCase\Dent_04SelfInfo.py", line 280, in test_self25
-    user_page.addtip()
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\Pages\SelfInfo.py", line 347, in addtip
-    assert error() in tip2
-AssertionError
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft1.19' class='none'>
-    <td class='failCase'><div class='testcase'>test_self26: 新增收货地址：名字错误</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.19')" >
-        失败</a>
-
-    <div id='div_ft1.19' class="popup_window">
-        <pre>
-        ft1.19: Traceback (most recent call last):
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\TestCase\Dent_04SelfInfo.py", line 290, in test_self26
-    user_page.addtip()
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\Pages\SelfInfo.py", line 347, in addtip
-    assert error() in tip2
-AssertionError
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft1.20' class='none'>
-    <td class='failCase'><div class='testcase'>test_self27: 新增收货地址：手机号为空</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.20')" >
-        失败</a>
-
-    <div id='div_ft1.20' class="popup_window">
-        <pre>
-        ft1.20: Traceback (most recent call last):
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\TestCase\Dent_04SelfInfo.py", line 300, in test_self27
-    user_page.addtip()
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\Pages\SelfInfo.py", line 347, in addtip
-    assert error() in tip2
-AssertionError
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft1.21' class='none'>
-    <td class='failCase'><div class='testcase'>test_self28: 新增收货地址：手机号错误</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.21')" >
-        失败</a>
-
-    <div id='div_ft1.21' class="popup_window">
-        <pre>
-        ft1.21: Traceback (most recent call last):
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\TestCase\Dent_04SelfInfo.py", line 311, in test_self28
-    user_page.addtip()
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\Pages\SelfInfo.py", line 347, in addtip
-    assert error() in tip2
-AssertionError
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft1.22' class='none'>
-    <td class='failCase'><div class='testcase'>test_self29: 新增收货地址：详细地址为空</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.22')" >
-        失败</a>
-
-    <div id='div_ft1.22' class="popup_window">
-        <pre>
-        ft1.22: Traceback (most recent call last):
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\TestCase\Dent_04SelfInfo.py", line 323, in test_self29
-    user_page.addtip()
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\Pages\SelfInfo.py", line 347, in addtip
-    assert error() in tip2
-AssertionError
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.23' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self3: 编辑个人信息上传头像格式不正确</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.24' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self30: 新增收货地址：新增成功</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.25' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self31: 编辑收货地址：更改用户名字</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.26' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self32: 编辑收货地址：更改手机号码</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.27' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self33: 编辑收货地址：更改地址</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.28' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self34: 编辑收货地址：更改默认地址</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='ft1.29' class='none'>
-    <td class='errorCase'><div class='testcase'>test_self35: 确认删除地址</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.29')" >
-        错误</a>
-
-    <div id='div_ft1.29' class="popup_window">
-        <pre>
-        ft1.29: Traceback (most recent call last):
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\TestCase\Dent_04SelfInfo.py", line 384, in test_self35
-    user_page.deleteadd()
-  File "E:\德雅项目文档\测试脚本\-POM-\DentTest\Pages\SelfInfo.py", line 422, in deleteadd
-    self.find_elements(*self.delete_loc)[i].click()
-IndexError: list index out of range
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.30' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self6: 修改密码原密码为空</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.31' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self7: 修改密码新密码为空</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.32' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self8: 修改密码确认新密码为空</div></td>
-    <td colspan='5' align='center'>通过</td>
-</tr>
-
-<tr id='pt1.33' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_self9: 修改密码原密码错误</div></td>
+    <td class='none'><div class='testcase'>test_forget8: 找回密码成功</div></td>
     <td colspan='5' align='center'>通过</td>
 </tr>
 
         <tr id='total_row'>
             <td>总计</td>
-            <td>33</td>
-            <td>27</td>
-            <td>5</td>
-            <td>1</td>
+            <td>8</td>
+            <td>8</td>
+            <td>0</td>
+            <td>0</td>
             <td>&nbsp;</td>
         </tr>
     </table>
@@ -555,9 +344,9 @@ IndexError: list index out of range
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:27, name:'通过'},
-                        {value:5, name:'失败'},
-                        {value:1, name:'错误'}
+                        {value:8, name:'通过'},
+                        {value:0, name:'失败'},
+                        {value:0, name:'错误'}
                     ],
                     itemStyle: {
                         emphasis: {
