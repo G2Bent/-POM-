@@ -14,5 +14,3 @@ def LoginUrl():
 def Title():
     for title in sheet["C"]:
         return title.value
-
-print(Title())

@@ -1,10 +1,14 @@
 import random,time
+from openpyxl import load_workbook
+
+wb = load_workbook("dent.xlsx")
+sheet = wb.get_sheet_by_name("Phone")
 
 #手机注册
 def RegPhone():
-    num = ["13217665001"]
+    num = sheet["A"]
     for p in num:
-        return p
+        return p.value
 
 #注册/绑定邮箱
 def RandEmail():
@@ -13,26 +17,27 @@ def RandEmail():
 
 #绑定手机号
 def RandPhone():
-    phone = ["15812487685"]
-    return phone
+    phone = sheet["B"]
+    for i in phone:
+        return i.value
 
 #登录手机号
 def LoginPhone():
-    phone = ["15816038158"]
+    phone = sheet["C"]
     for i in phone:
-        return i
+        return i.value
 
 #邮箱登录
 def LoginEmail():
-    email = ["648604875@qq.com","944921374@qq.com"]
-    for i in random.sample(email, 1):
-        return i
+    email = sheet["d"]
+    for i in email:
+        return i.value
 
 #找回密码
 def FindPassword():
-    phone = ["13217665001","15816038158","648604875@qq.com","944921374@qq.com"]
+    phone = sheet["E"]
     for i in random.sample(phone,1):
-        return i
+        return i.value
 
 #错误邮箱
 def ErrorEmail():
