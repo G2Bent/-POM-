@@ -6,9 +6,9 @@ sheet = wb.get_sheet_by_name("Phone")
 
 #手机注册
 def RegPhone():
-    num = sheet["A"]
+    num = ["13217665001"]
     for p in num:
-        return p.value
+        return p
 
 #注册/绑定邮箱
 def RandEmail():
@@ -17,9 +17,9 @@ def RandEmail():
 
 #绑定手机号
 def RandPhone():
-    phone = sheet["B"]
+    phone = ["15812487685"]
     for i in phone:
-        return i.value
+        return i
 
 #登录手机号
 def LoginPhone():
@@ -29,7 +29,7 @@ def LoginPhone():
 
 #邮箱登录
 def LoginEmail():
-    email = sheet["d"]
+    email = sheet["D"]
     for i in email:
         return i.value
 
