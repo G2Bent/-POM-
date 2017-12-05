@@ -29,7 +29,7 @@ def report():
 fp = open(report(),'wb')
 Runner = HTMLTestRunner(
         stream=fp,
-        title='德雅WEB官网测试报告',
+        title='德雅官网测试报告',
         description='测试用例执行情况'
             )
 

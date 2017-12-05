@@ -125,7 +125,7 @@ if __name__ == '__main__':
     fp = open(report_name, 'wb')
     Runner = HTMLTestRunner(
         stream=fp,
-        title='手机登录测试报告',
+        title='找回密码测试报告',
         description='测试用例执行情况'
     )
     Runner.run(testunit)

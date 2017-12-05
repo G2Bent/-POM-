@@ -196,9 +196,9 @@
         
     <div class='page-header'>
         <h1>德雅WEB官网测试报告</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2017-12-05 15:09:02</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:17.161168</p>
-<p class='attribute'><strong>状态:</strong> 通过 7</p>
+    <p class='attribute'><strong>开始时间:</strong> 2017-12-05 16:19:24</p>
+<p class='attribute'><strong>运行时长:</strong> 0:01:46.921328</p>
+<p class='attribute'><strong>状态:</strong> 通过 8</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>测试用例执行情况</p></div>
@@ -230,53 +230,100 @@
         </tr>
         
     <tr class='passClass'>
-        <td>Dent_02LoginCase.LoginCase: 登录</td>
-        <td>7</td>
-        <td>7</td>
+        <td>Dent_05ForgotPassword.LoginCase: 登录</td>
+        <td>8</td>
+        <td>8</td>
         <td>0</td>
         <td>0</td>
-        <td><a href="javascript:showClassDetail('c1',7)">详情</a></td>
+        <td><a href="javascript:showClassDetail('c1',8)">详情</a></td>
     </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login1: 手机登录成功</div></td>
+    <td class='none'><div class='testcase'>test_forget1: 输入未注册手机号</div></td>
     <td colspan='5' align='center'>通过</td>
 </tr>
 
 <tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login2: 邮箱登录成功</div></td>
+    <td class='none'><div class='testcase'>test_forget2: 输入错误手机号</div></td>
     <td colspan='5' align='center'>通过</td>
 </tr>
 
 <tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login3: 用户名错误</div></td>
+    <td class='none'><div class='testcase'>test_forget3: 不做操作</div></td>
     <td colspan='5' align='center'>通过</td>
 </tr>
 
 <tr id='pt1.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login4: 密码错误</div></td>
+    <td class='none'><div class='testcase'>test_forget4: 输入错误验证码</div></td>
     <td colspan='5' align='center'>通过</td>
 </tr>
 
 <tr id='pt1.5' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login5: 用户名或密码不能为空</div></td>
+    <td class='none'><div class='testcase'>test_forget5: 输入不足6位数验证码</div></td>
     <td colspan='5' align='center'>通过</td>
 </tr>
 
 <tr id='pt1.6' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login6: 测试登录和注册页面的链接是否正确</div></td>
-    <td colspan='5' align='center'>通过</td>
+    <td class='none'><div class='testcase'>test_forget6: 输入错误新密码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
+        通过</a>
+
+    <div id='div_pt1.6' class="popup_window">
+        <pre>
+        pt1.6: http://112.74.29.84:23301/api/User/getemailverifycode?token=a277dccac864428aae35e5dbe52ac8e4&amp;email=944921374@qq.com&amp;type=2
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='pt1.7' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login7: 测试用户(回车键)登录成功</div></td>
-    <td colspan='5' align='center'>通过</td>
+    <td class='none'><div class='testcase'>test_forget7: 输入错误确认新密码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.7')" >
+        通过</a>
+
+    <div id='div_pt1.7' class="popup_window">
+        <pre>
+        pt1.7: http://112.74.29.84:23301/api/User/getemailverifycode?token=d19b87490810498b934c46dc540f255a&amp;email=944921374@qq.com&amp;type=2
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_forget8: 找回密码成功</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.8')" >
+        通过</a>
+
+    <div id='div_pt1.8' class="popup_window">
+        <pre>
+        pt1.8: http://112.74.29.84:23301/api/User/getemailverifycode?token=d862b41121134c74a694e88e4027aff8&amp;email=944921374@qq.com&amp;type=2
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
         <tr id='total_row'>
             <td>总计</td>
-            <td>7</td>
-            <td>7</td>
+            <td>8</td>
+            <td>8</td>
             <td>0</td>
             <td>0</td>
             <td>&nbsp;</td>
@@ -311,7 +358,7 @@
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:7, name:'通过'},
+                        {value:8, name:'通过'},
                         {value:0, name:'失败'},
                         {value:0, name:'错误'}
                     ],
