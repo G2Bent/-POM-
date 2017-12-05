@@ -8,10 +8,10 @@ def Pwd():
 
 #不足6位数
 def ErrorNum_5():
-    i = random.randint(1,99999)
+    i = time.strftime("%M%S")
     return i
 
 #错误验证码
 def ErrorNum_6():
-    i = random.randint(100000,999999)
+    i = time.strftime("%H%M%S")
     return i
