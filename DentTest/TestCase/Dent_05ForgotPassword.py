@@ -5,7 +5,6 @@ from UseData.Open_Url import *
 from UseData.PhoneEmail import *
 from UseData.Password import *
 from UseData.Txt import *
-from BasePages.BasePage import login_url
 from selenium import webdriver
 from HTMLTestRunner import HTMLTestRunner
 

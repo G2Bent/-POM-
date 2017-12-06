@@ -13,5 +13,5 @@ def delephone(phone):
     else:
         return False
 
-print(delephone("15812487685"))
+
 
