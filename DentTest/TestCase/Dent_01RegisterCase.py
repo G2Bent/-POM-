@@ -10,11 +10,10 @@ from API import post
 
 class RegisterCase(unittest.TestCase):
     """注册"""
-    @classmethod
-    def setUpClass(cls):
-        cls.driver = browser()
-        cls.title = Title()
-        cls.url = RegisterURL()
+    def setUp(self):
+        self.driver = browser()
+        self.title = Title()
+        self.url = RegisterURL()
 
     def open_dent(self):
         reg_page = RegisterPage(self.driver, self.url, self.title)
@@ -106,9 +105,8 @@ class RegisterCase(unittest.TestCase):
         reg_page.click_submit()
         # assert "个人中心" in reg_page.show_()
 
-    @classmethod
-    def tearDownClass(cls):
-        driver = cls.driver
+    def tearDown(self):
+        driver = self.driver
         now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
         img_path = r'..\image\注册\\' + now + '.png'
         driver.save_screenshot(img_path)

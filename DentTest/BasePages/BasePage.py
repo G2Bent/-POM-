@@ -1,7 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-login_url = "http://test.dent-lab.com/login.html"
+# login_url = "http://test.dent-lab.com/login.html"
 
 class BasePages(object):
     """BasePage封装所有页面都公用的方法，例如：driver,url,FindElement等"""

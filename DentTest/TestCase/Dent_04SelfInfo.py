@@ -1,7 +1,6 @@
 import unittest,time
 from Pages.SelfInfo import SelfInfo
 from BasePages.Selenium2 import browser
-from BasePages.BasePage import login_url
 from selenium import webdriver
 from UseData.Open_Url import *
 from UseData.PhoneEmail import *
@@ -12,15 +11,14 @@ from HTMLTestRunner import HTMLTestRunner
 class SelfCase(unittest.TestCase):
 
     """个人中心"""
-    @classmethod
-    def setUpClass(cls):
-        cls.driver = browser()
+    def setUp(self):
+        self.driver = browser()
         # cls.driver.implicitly_wait(5)
-        cls.url = LoginUrl()
-        cls.title = Title()
-        cls.image1 = "test1"
-        cls.image2 = "test2"
-        cls.image3 = "test3"
+        self.url = LoginUrl()
+        self.title = Title()
+        self.image1 = "test1"
+        self.image2 = "test2"
+        self.image3 = "test3"
 
     def login(self):
         # 声明LoginPage对象
@@ -386,26 +384,24 @@ class SelfCase(unittest.TestCase):
         user_page.screen(self._testMethodDoc)
         user_page.subdele()
 
+    def tearDown(self):
+        self.driver.quit()
 
-    @classmethod
-    def tearDownClass(cls):
-        cls.driver.quit()
-
-# if __name__ == '__main__':
-#     testunit = unittest.TestSuite()
-#     # 将测试用例加入到测试容器中
-#     for i in range(1,37):
-#         testunit.addTest(SelfCase("test_self%s"%str(i)))
-#     now = time.strftime("%Y-%m-%d %H_%M_%S")
-#     report_name = r'..\report\\' + str(now) + '_result.html'
-#     fp = open(report_name, 'wb')
-#     Runner = HTMLTestRunner(
-#         stream=fp,
-#         title='个人中心测试报告',
-#         description='测试用例执行情况'
-#     )
-#     Runner.run(testunit)
-#     fp.close()
+if __name__ == '__main__':
+    testunit = unittest.TestSuite()
+    # 将测试用例加入到测试容器中
+    for i in range(1,37):
+        testunit.addTest(SelfCase("test_self%s"%str(i)))
+    now = time.strftime("%Y-%m-%d %H_%M_%S")
+    report_name = r'..\report\\' + str(now) + '_result.html'
+    fp = open(report_name, 'wb')
+    Runner = HTMLTestRunner(
+        stream=fp,
+        title='个人中心测试报告',
+        description='测试用例执行情况'
+    )
+    Runner.run(testunit)
+    fp.close()
 
 
 
