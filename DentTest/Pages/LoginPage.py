@@ -51,7 +51,9 @@ class LoginPage(BasePages):
 
     #用户名或者密码不合理tip框内容提示
     def show_tips(self):
-        return self.find_element(*self.tips_loc).text
+        t = self.find_element(*self.tips_loc).text
+        if t == error():
+            assert error() in t
 
     #登录成功页面中的用户ID查找
     # def show_(self):
