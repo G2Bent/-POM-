@@ -1,7 +1,6 @@
 import unittest,time
 from Pages.LoginPage import LoginPage
 from BasePages.Selenium2 import browser
-from BasePages.BasePage import login_url
 from selenium import webdriver
 from UseData.Open_Url import *
 from UseData.PhoneEmail import *
