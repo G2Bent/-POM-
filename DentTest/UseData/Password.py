@@ -9,7 +9,6 @@ def Pwd():
     pwd = sheet["F"]
     for i in pwd:
         return i.value
-print(Pwd())
 
 #不足6位数
 def ErrorNum_5():
