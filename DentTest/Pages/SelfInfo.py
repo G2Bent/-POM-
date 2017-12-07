@@ -348,7 +348,13 @@ class SelfInfo(BasePages):
 
     #添加收货地址:点击添加收货地址
     def addaddress(self):
-        self.find_element(*self.add_address_loc).click()
+        try:
+            self.find_element(*self.add_address_loc).click()
+        except:
+            self.find_elements(*self.delete_loc)[0].click()
+            self.find_element(*self.deletesub_loc).click()
+            time.sleep(2)
+            self.find_element(*self.add_address_loc).click()
 
     #添加收货地址:输入用户名
     def addname(self,name):
