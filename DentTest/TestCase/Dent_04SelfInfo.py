@@ -160,6 +160,9 @@ class SelfCase(unittest.TestCase):
         """绑定邮箱成功"""
         user_page = self.login()
         user_page.BDEmail()
+        user_page.txtuser(LoginPhone())
+        user_page.txtpassword(Pwd())
+        user_page.next()
         user_page.emailuni(RandEmail())
         user_page.emailsave()
         user_page.screen(self._testMethodDoc)
@@ -168,6 +171,9 @@ class SelfCase(unittest.TestCase):
         """绑定邮箱邮箱格式错误"""
         user_page = self.login()
         user_page.BDEmail()
+        user_page.txtuser(LoginPhone())
+        user_page.txtpassword(Pwd())
+        user_page.next()
         user_page.emailtxt(ErrorEmail())
         user_page.emailverifybtn()
         user_page.emailsave()
@@ -177,6 +183,9 @@ class SelfCase(unittest.TestCase):
         """绑定邮箱邮箱已注册"""
         user_page = self.login()
         user_page.BDEmail()
+        user_page.txtuser(LoginPhone())
+        user_page.txtpassword(Pwd())
+        user_page.next()
         user_page.emailtxt(LoginEmail())
         user_page.emailverifybtn()
         user_page.emailsave()
@@ -186,6 +195,9 @@ class SelfCase(unittest.TestCase):
         """绑定邮箱邮箱不能为空"""
         user_page = self.login()
         user_page.BDEmail()
+        user_page.txtuser(LoginPhone())
+        user_page.txtpassword(Pwd())
+        user_page.next()
         user_page.emailsave()
         user_page.screen(self._testMethodDoc)
 
@@ -193,6 +205,9 @@ class SelfCase(unittest.TestCase):
         """绑定邮箱邮箱验证码不足6位"""
         user_page = self.login()
         user_page.BDEmail()
+        user_page.txtuser(LoginPhone())
+        user_page.txtpassword(Pwd())
+        user_page.next()
         user_page.emailtxt(RandEmail())
         user_page.emailverifybtn()
         user_page.emailverifytxt(ErrorNum_5())
@@ -203,6 +218,9 @@ class SelfCase(unittest.TestCase):
         """绑定邮箱邮箱验证码错误"""
         user_page = self.login()
         user_page.BDEmail()
+        user_page.txtuser(LoginPhone())
+        user_page.txtpassword(Pwd())
+        user_page.next()
         user_page.emailtxt(RandEmail())
         user_page.emailverifybtn()
         user_page.emailverifytxt(ErrorNum_6())
@@ -210,10 +228,95 @@ class SelfCase(unittest.TestCase):
         user_page.emailtips()
         user_page.screen(self._testMethodDoc)
 
+    def test_self36(self):
+        """绑定修改邮箱原账号错误"""
+        user_page = self.login()
+        user_page.BDEmail()
+        user_page.txtuser(ErrorPhone())
+        user_page.txtpassword(Pwd())
+        user_page.next()
+        user_page.error_usertip()
+        user_page.screen(self._testMethodDoc)
+
+    def test_self37(self):
+        """绑定修改邮箱输入已注册邮箱"""
+        user_page = self.login()
+        user_page.BDEmail()
+        user_page.txtuser(LoginEmail())
+        user_page.txtpassword(Pwd())
+        user_page.next()
+        time.sleep(2)
+        user_page.error_usertip()
+        user_page.screen(self._testMethodDoc)
+
+    def test_self38(self):
+        """绑定修改邮箱输入邮箱账号"""
+        user_page = self.login()
+        user_page.BDEmail()
+        user_page.txtuser(RandEmail())
+        user_page.txtpassword(Pwd())
+        user_page.next()
+        time.sleep(2)
+        user_page.error_usertip()
+        user_page.screen(self._testMethodDoc)
+
+    def test_self39(self):
+        """绑定修改邮箱原账号为空"""
+        user_page = self.login()
+        user_page.BDEmail()
+        user_page.next()
+        time.sleep(2)
+        user_page.error_usertip()
+        user_page.screen(self._testMethodDoc)
+
+    def test_self40(self):
+        """绑定修改手机号原账号为空"""
+        user_page = self.login()
+        user_page.BDPhone()
+        user_page.nextphone()
+        time.sleep(2)
+        user_page.error_phonetip()
+        user_page.screen(self._testMethodDoc)
+
+    def test_self41(self):
+        """绑定修改手机号输入邮箱账号"""
+        user_page = self.login()
+        user_page.BDPhone()
+        user_page.yphone(RandEmail())
+        user_page.ypassword(Pwd())
+        user_page.nextphone()
+        time.sleep(2)
+        user_page.error_phonetip()
+        user_page.screen(self._testMethodDoc)
+
+    def test_self42(self):
+        """绑定修改手机号输入已注册邮箱"""
+        user_page = self.login()
+        user_page.BDPhone()
+        user_page.yphone(LoginEmail())
+        user_page.ypassword(Pwd())
+        user_page.nextphone()
+        time.sleep(2)
+        user_page.error_phonetip()
+        user_page.screen(self._testMethodDoc)
+
+    def test_self43(self):
+        """绑定修改手机号原账号错误"""
+        user_page = self.login()
+        user_page.BDPhone()
+        user_page.yphone(ErrorPhone())
+        user_page.ypassword(Pwd())
+        user_page.nextphone()
+        user_page.error_phonetip()
+        user_page.screen(self._testMethodDoc)
+
     def test_self19(self):
         """绑定/修改手机号为空"""
         user_page = self.login_email()
         user_page.BDPhone()
+        user_page.yphone(LoginEmail())
+        user_page.ypassword(Pwd())
+        user_page.nextphone()
         user_page.phonebtn()
         time.sleep(3)
         user_page.phonetip()
@@ -223,6 +326,9 @@ class SelfCase(unittest.TestCase):
         """绑定/修改手机验证码错误"""
         user_page = self.login_email()
         user_page.BDPhone()
+        user_page.yphone(LoginEmail())
+        user_page.ypassword(Pwd())
+        user_page.nextphone()
         user_page.phone(RandPhone())
         user_page.phonebtn()
         user_page.phonetxt(ErrorNum_6())
@@ -234,6 +340,9 @@ class SelfCase(unittest.TestCase):
         """绑定/修改手机验证码不足6位"""
         user_page = self.login_email()
         user_page.BDPhone()
+        user_page.yphone(LoginEmail())
+        user_page.ypassword(Pwd())
+        user_page.nextphone()
         user_page.phone(RandPhone())
         user_page.phonetxt(ErrorNum_5())
         user_page.savephone()
@@ -244,6 +353,9 @@ class SelfCase(unittest.TestCase):
         """绑定/修改手机手机号错误"""
         user_page = self.login_email()
         user_page.BDPhone()
+        user_page.yphone(LoginEmail())
+        user_page.ypassword(Pwd())
+        user_page.nextphone()
         user_page.phone(ErrorPhone())
         user_page.phonebtn()
         user_page.phonetip()
@@ -253,6 +365,9 @@ class SelfCase(unittest.TestCase):
         """绑定/修改手机号已经注册"""
         user_page = self.login_email()
         user_page.BDPhone()
+        user_page.yphone(LoginEmail())
+        user_page.ypassword(Pwd())
+        user_page.nextphone()
         user_page.phone(LoginPhone())
         user_page.phonebtn()
         user_page.phonetip()
@@ -262,6 +377,9 @@ class SelfCase(unittest.TestCase):
         """绑定/修改手机成功"""
         user_page =self.login_email()
         user_page.BDPhone()
+        user_page.yphone(LoginEmail())
+        user_page.ypassword(Pwd())
+        user_page.nextphone()
         user_page.phone(RandPhone())
         user_page.phonebtn()
         time.sleep(4)
@@ -390,7 +508,7 @@ class SelfCase(unittest.TestCase):
 if __name__ == '__main__':
     testunit = unittest.TestSuite()
     # 将测试用例加入到测试容器中
-    for i in range(1,37):
+    for i in range(1,44):
         testunit.addTest(SelfCase("test_self%s"%str(i)))
     now = time.strftime("%Y-%m-%d %H_%M_%S")
     report_name = r'..\report\\' + str(now) + '_result.html'

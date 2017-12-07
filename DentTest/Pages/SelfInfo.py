@@ -39,6 +39,10 @@ class SelfInfo(BasePages):
     email_txt_loc = (By.XPATH,'//*[@id="txt_verify_code"]')#输入验证码
     save_email_loc = (By.XPATH,'//*[@id="btn_save_email"]')#保存邮箱
     bdemail_loc = (By.XPATH,'//*[@id="email_error_tips"]')#绑定/修改邮箱错误提示
+    txt_user_loc = (By.XPATH,'//*[@id="txt_user"]')#输入原账号
+    txt_password_loc = (By.XPATH,'//*[@id="pwd_login"]')#输入原密码
+    next_loc = (By.XPATH,'//*[@id="btn_login"]')#点击下一步
+    errortips_loc = (By.XPATH,'//*[@id="error_tips"]')#错误提示
 
     """绑定/修改手机页面"""
     phone_loc = (By.XPATH,'//*[@id="txt_phone"]')#手机号
@@ -46,6 +50,10 @@ class SelfInfo(BasePages):
     phone_txt_loc =(By.XPATH,'//*[@id="txt_phone_verify_code"]')#输入验证码
     save_phone_loc = (By.XPATH,'//*[@id="btn_save_phone"]')#保存手机
     phonetip_loc = (By.XPATH,'//*[@id="phone_error_tips"]')#手机号错误提示
+    phonetxt_loc = (By.XPATH,'//*[@id="txt_phone_user"]')#输入原手机号
+    passwordtxt_loc = (By.XPATH,'//*[@id="pwd_phone_login"]')#输入原密码
+    nextphone_loc = (By.XPATH,'//*[@id="btn_phone_login"]')#点击下一步
+    errorphonetip_loc = (By.XPATH,'//*[@id="error_phone_tips"]')#原账号错误提示
 
 
     """收货地址页面-添加收货地址编辑页"""
@@ -208,6 +216,25 @@ class SelfInfo(BasePages):
     def savepsw(self):
         self.find_element(*self.save_pwd_loc).click()
 
+    #绑定/修改邮箱：输入原账号
+    def txtuser(self,user):
+        self.find_element(*self.txt_user_loc).send_keys(user)
+
+    #绑定/修改邮箱：输入原密码
+    def txtpassword(self,password):
+        self.find_element(*self.txt_password_loc).send_keys(password)
+
+    #绑定/修改邮箱：点击下一步
+    def next(self):
+        self.find_element(*self.next_loc).click()
+
+    #绑定/修改邮箱：输入原账号，错误提示
+    def error_usertip(self):
+        tips = self.find_element(*self.errortips_loc)
+        tip = tips.text
+        if tip == error():
+            assert error() in tip
+
     #绑定/修改邮箱：输入邮箱，获取验证码
     def emailuni(self,email):
         self.find_element(*self.email_loc).send_keys(email)
@@ -258,6 +285,25 @@ class SelfInfo(BasePages):
         #     assert t4 in tip
         # else:
         #     assert t5 in tip
+
+    #绑定/修改手机号：输入原账号
+    def yphone(self,phone):
+        self.find_element(*self.phonetxt_loc).send_keys(phone)
+
+    # 绑定/修改手机号：输入原密码
+    def ypassword(self,password):
+        self.find_element(*self.passwordtxt_loc).send_keys(password)
+
+    # 绑定/修改手机号：点击下一步
+    def nextphone(self):
+        self.find_element(*self.nextphone_loc).click()
+
+    #绑定/修改手机号：错误提示
+    def error_phonetip(self):
+        tips = self.find_element(*self.errorphonetip_loc)
+        tip = tips.text
+        if tip == error():
+            assert error() in tip
 
     #绑定/修改手机号：输入手机号
     def phone(self,phone):
