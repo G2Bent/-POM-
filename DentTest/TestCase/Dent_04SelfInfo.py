@@ -245,7 +245,6 @@ class SelfCase(unittest.TestCase):
         user_page.txtuser(LoginEmail())
         user_page.txtpassword(Pwd())
         user_page.next()
-        time.sleep(2)
         user_page.error_usertip()
         user_page.screen(self._testMethodDoc)
 
@@ -256,7 +255,6 @@ class SelfCase(unittest.TestCase):
         user_page.txtuser(RandEmail())
         user_page.txtpassword(Pwd())
         user_page.next()
-        time.sleep(2)
         user_page.error_usertip()
         user_page.screen(self._testMethodDoc)
 
@@ -265,7 +263,6 @@ class SelfCase(unittest.TestCase):
         user_page = self.login()
         user_page.BDEmail()
         user_page.next()
-        time.sleep(2)
         user_page.error_usertip()
         user_page.screen(self._testMethodDoc)
 
@@ -274,7 +271,6 @@ class SelfCase(unittest.TestCase):
         user_page = self.login()
         user_page.BDPhone()
         user_page.nextphone()
-        time.sleep(2)
         user_page.error_phonetip()
         user_page.screen(self._testMethodDoc)
 
@@ -285,7 +281,6 @@ class SelfCase(unittest.TestCase):
         user_page.yphone(RandEmail())
         user_page.ypassword(Pwd())
         user_page.nextphone()
-        time.sleep(2)
         user_page.error_phonetip()
         user_page.screen(self._testMethodDoc)
 
@@ -296,7 +291,6 @@ class SelfCase(unittest.TestCase):
         user_page.yphone(LoginEmail())
         user_page.ypassword(Pwd())
         user_page.nextphone()
-        time.sleep(2)
         user_page.error_phonetip()
         user_page.screen(self._testMethodDoc)
 
