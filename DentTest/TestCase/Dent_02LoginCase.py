@@ -9,12 +9,11 @@ from HTMLTestRunner import HTMLTestRunner
 
 class LoginCase(unittest.TestCase):
     """登录"""
-    @classmethod
-    def setUpClass(cls):
-        cls.driver = browser()
+    def setUp(self):
+        self.driver = browser()
         # cls.driver.implicitly_wait(5)
-        cls.url = LoginUrl()
-        cls.title = Title()
+        self.url = LoginUrl()
+        self.title = Title()
 
     def open_dent(self):
         login_page = LoginPage(self.driver, self.url, self.title)
@@ -80,9 +79,8 @@ class LoginCase(unittest.TestCase):
         login_page.click_submit_key()
         # assert "个人中心" in login_page.show_()
 
-    @classmethod
-    def tearDownClass(cls):
-        driver = cls.driver
+    def tearDown(self):
+        driver = self.driver
         now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
         img_path = r'..\image\手机登录\\' + now + '.png'
         driver.save_screenshot(img_path)
