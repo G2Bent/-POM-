@@ -1,10 +1,12 @@
+import time
+import unittest
+
 from Pages.LoginPage import LoginPage
 from BasePages.Selenium2 import browser
 from UseData.Open_Url import *
-from UseData.PhoneEmail import *
 from UseData.Password import *
-from selenium.webdriver.common.action_chains import *
-import unittest,time
+from UseData.PhoneEmail import *
+
 
 class LoginOut(unittest.TestCase):
     @classmethod

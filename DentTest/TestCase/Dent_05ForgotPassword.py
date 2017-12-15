@@ -1,12 +1,11 @@
-import unittest,time
+import unittest
+
 from Pages.ForgotPassword import Forgetpwd
 from BasePages.Selenium2 import browser
 from UseData.Open_Url import *
-from UseData.PhoneEmail import *
 from UseData.Password import *
-from UseData.Txt import *
-from selenium import webdriver
-from HTMLTestRunner import HTMLTestRunner
+from UseData.PhoneEmail import *
+
 
 class LoginCase(unittest.TestCase):
     """登录"""

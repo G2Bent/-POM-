@@ -1,10 +1,10 @@
 from selenium.webdriver.common.by import By
-from BasePages.BasePage import BasePages
+from BasePages.Selenium2 import Sele
 from Common.Data import verify_code
 from Pages.Errortip import error
 import time
 
-class RegisterPage(BasePages):
+class RegisterPage(Sele):
     #定位器，通过元素属性定位元素对象
     username_loc = (By.XPATH,'//*[@id="txt_user"]')#输入手机号/邮箱
     verify_code_btn = (By.XPATH,'//*[@id="btn_verify"]')#点击获取验证码
@@ -63,17 +63,14 @@ class RegisterPage(BasePages):
     #点击“登录”：调用click对象，点击“登录”
     def click_login(self):
         self.find_element(*self.loginurl_loc).click()
-
     #用户名或者密码不合理tip框内容提示
     # def show_tips(self):
         # t1="两次输入的密码不一致";t2="手机号/邮箱格式不正确";
         # t3= "密码由6-16字母(区分大小写)、数字组成"
         # return self.find_element(*self.tips_loc).text
-
     #个人中心，注册成功校验
     # def show_(self):
     #     return self.find_element(*self.re_loc).text
-
     def tip_show(self):
         # t1 = '两次输入的密码不一致';t2 = '手机号/邮箱格式不正确'
         # t3 = '密码由6-16字母(区分大小写)、数字组成';t4 = '手机号/邮箱不能为空'

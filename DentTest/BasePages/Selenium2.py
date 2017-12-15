@@ -1,3 +1,10 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+# @Author  : G2Bent
+# @Time    : 2017/12/15 17:15
+# @Email   : 944921374@qq.com
+# @File    : Selenium2.py
+# @Description:
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.select import Select
@@ -28,26 +35,43 @@ def browser(browser="Chrome"):
 
 class Sele(object):
 
-    """基于原生selenium框架做了二次封装"""
-    def __init__(self,driver):
-        """启动浏览器参数化，默认启动Chrome"""
+    """基于原生selenium框架做了二次封装
+    启动浏览器参数化，默认启动Chrome"""
+    def __init__(self,driver,base_url,pagetitle):
+        self.base_url = base_url
+        self.pagetitle = pagetitle
         self.driver = driver
 
-    def open(self,url,t = '',timeout = 10):
-        """使用get打开url,最大化窗口"""
+    def on_page(self,pagetitle):
+        return pagetitle in self.driver.title
+
+    #打开页面，校验页面是否加载正确
+    # 以单下划线_开头的方法，在使用import *时，该方法不会被导入，保证该方法为类私有的。
+    def _open(self,url,pagetitle):
+        #使用get打开访问链接地址
         self.driver.get(url)
         self.driver.maximize_window()
-        try:
-            WebDriverWait(self.driver,timeout,1).until(EC.title_contains(t))
-        except TimeoutException:
-            print("打开%s失败"%url)
-        except Exception as msg:
-            print("失败：%s"%msg)
+        #使用assert进行校验，打开的链接地址是否与配置的地址一致。调用on_page()方法
+        assert self.on_page(pagetitle),"打开页面失败%s"%url
 
-    def find_element(self,localtor,timeout=10):
-        """定位元素方法封装"""
-        element = WebDriverWait(self.driver,timeout,1).until(EC.presence_of_element_located(localtor))
-        return element
+    # 定义open方法，调用_open()进行打开链接
+    def open(self):
+        self._open(self.base_url, self.pagetitle)
+        self.driver.maximize_window()
+
+    #重写元素定位方法
+    def find_element(self,*loc):
+        #return self.driver.find_element(*loc)
+        try:
+            #确保元素是可见的
+            # 注意：以下入参为元组的元素，需要加*。Python存在这种特性，就是将入参放在元组里。
+            # WebDriverWait(self.driver,10).until(lambda driver: driver.find_element(*loc).is_displayed())
+            # 注意：以下入参本身是元组，不需要加*
+            WebDriverWait(self.driver,5).until(EC.visibility_of_all_elements_located(loc))
+            return  self.driver.find_element(*loc)
+        except:
+            print("页面元素未能找到%s"%self,loc)
+
     def click(self,localtor):
         """点击操作"""
         element = self.find_element(localtor)
@@ -228,3 +252,4 @@ if __name__ == '__main__':
     driver_n.js_scroll_top()
     input_loc = ("id", "kw")
     print (driver_n.get_title())
+    driver.quit()

@@ -1,10 +1,10 @@
 from selenium.webdriver.common.by import By
-from BasePages.BasePage import BasePages
+from BasePages.Selenium2 import Sele
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import *
 from Pages.Errortip import error
 
-class LoginPage(BasePages):
+class LoginPage(Sele):
     #定位器，通过元素属性定位元素对象
     username_loc = (By.XPATH,'//*[@id="txt_user"]')#输入手机号/邮箱
     password_loc = (By.XPATH,'//*[@id="pwd_login"]')#输入密码
