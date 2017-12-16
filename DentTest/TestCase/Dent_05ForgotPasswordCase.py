@@ -7,7 +7,7 @@ from UseData.Password import *
 from UseData.PhoneEmail import *
 
 
-class LoginCase(unittest.TestCase):
+class ForgotPasswordCase(unittest.TestCase):
     """登录"""
     @classmethod
     def setUpClass(cls):

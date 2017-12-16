@@ -8,7 +8,7 @@ from UseData.Password import *
 from UseData.PhoneEmail import *
 
 
-class LoginOut(unittest.TestCase):
+class LogOutCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.driver = browser()

@@ -1,7 +1,7 @@
 import unittest
 from HTMLTestRunner import HTMLTestRunner
 
-from Pages.Personal import Personal
+from Pages.PersonalPage import PersonalPage
 from BasePages.Selenium2 import browser
 from UseData.Open_Url import *
 from UseData.Password import *
@@ -9,7 +9,7 @@ from UseData.PhoneEmail import *
 from UseData.Txt import *
 
 
-class Personal(unittest.TestCase):
+class PersonalCase(unittest.TestCase):
 
     """个人中心"""
     def setUp(self):
@@ -23,7 +23,7 @@ class Personal(unittest.TestCase):
 
     def login(self):
         # 声明LoginPage对象
-        login_page = Personal(self.driver, self.url, self.title)
+        login_page = PersonalPage(self.driver, self.url, self.title)
         # 调用打开页面组件
         login_page.open()
         login_page.Login(LoginPhone(), Pwd())
@@ -32,7 +32,7 @@ class Personal(unittest.TestCase):
 
     def login_email(self):
         # 声明LoginPage对象
-        login_page = Personal(self.driver, self.url, self.title)
+        login_page = PersonalPage(self.driver, self.url, self.title)
         # 调用打开页面组件
         login_page.open()
         login_page.Login(LoginEmail(), Pwd())
