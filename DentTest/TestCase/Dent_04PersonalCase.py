@@ -504,7 +504,7 @@ if __name__ == '__main__':
     testunit = unittest.TestSuite()
     # 将测试用例加入到测试容器中
     for i in range(1,44):
-        testunit.addTest(SelfCase("test_self%s"%str(i)))
+        testunit.addTest(PersonalCase("test_self%s"%str(i)))
     now = time.strftime("%Y-%m-%d %H_%M_%S")
     report_name = r'..\report\\' + str(now) + '_result.html'
     fp = open(report_name, 'wb')
