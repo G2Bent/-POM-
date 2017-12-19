@@ -54,7 +54,7 @@ class LoginCase(unittest.TestCase):
         """密码错误"""
         login_page = self.open_dent()
         login_page.input_username(LoginPhone())
-        login_page.input_password(ErrorNum_5())
+        login_page.input_password(GenWord(5))
         login_page.click_submit()
         time.sleep(2)
         login_page.show_tips()
