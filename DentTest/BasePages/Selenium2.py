@@ -107,9 +107,9 @@ class Sele(object):
 
     def is_text_in_value(self,locator,value,timeout = 10):
         '''
-              判断元素的value值，没定位到元素返回false,定位到返回判断结果布尔值
-              result = driver.text_in_element(locator, text)
-              '''
+        判断元素的value值，没定位到元素返回false,定位到返回判断结果布尔值
+        result = driver.text_in_element(locator, text)
+        '''
         try:
             result = WebDriverWait(self.driver, timeout, 1).until(
                 EC.text_to_be_present_in_element_value(locator, value))
