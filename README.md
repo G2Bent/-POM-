@@ -29,7 +29,7 @@
 >  4. page class中的方法命名最好根据其对应的业务场景进行，例如通常登录后我们需要等待几秒中，我们可以这样命名该方法:waitingForLoginSuccess().
 
 下图为非POM和POM对比图：
-#### <div align=center> ![enter image description here](http://images.gitbook.cn/218f5b80-fa8f-11e7-98ba-49de68b07d22)
+#### <div align=center> ![enter image description here](http://images.gitbook.cn/218f5b80-fa8f-11e7-98ba-49de68b07d22)</div>
 ##### **POM框架的优点：**
 
 >  - POM提供了一种在UI层操作、业务流程与验证分离的模式，这使得测试代码变得更加清晰和高可读性
